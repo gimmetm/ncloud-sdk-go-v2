@@ -11,23 +11,23 @@ package vloadbalancer
 type ChangeLoadBalancerListenerConfigurationRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// SSL인증서번호
-SslCertificateNo *string `json:"sslCertificateNo,omitempty"`
+	SslCertificateNo *string `json:"sslCertificateNo,omitempty"`
 
 	// HTTP2사용여부
-UseHttp2 *bool `json:"useHttp2,omitempty"`
+	UseHttp2 *bool `json:"useHttp2,omitempty"`
 
 	// 로드밸런서리스너번호
-LoadBalancerListenerNo *string `json:"loadBalancerListenerNo"`
+	LoadBalancerListenerNo *string `json:"loadBalancerListenerNo"`
 
 	// 포트
-Port *int32 `json:"port,omitempty"`
+	Port *int32 `json:"port,omitempty"`
 
 	// 프로토콜유형코드
-ProtocolTypeCode *string `json:"protocolTypeCode,omitempty"`
+	ProtocolTypeCode *string `json:"protocolTypeCode,omitempty"`
 
 	// TLS최소지원버전유형코드
-TlsMinVersionTypeCode *string `json:"tlsMinVersionTypeCode,omitempty"`
+	TlsMinVersionTypeCode *string `json:"tlsMinVersionTypeCode,omitempty"`
 }

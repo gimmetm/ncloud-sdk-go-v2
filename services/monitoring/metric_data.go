@@ -9,16 +9,15 @@
 package monitoring
 
 type MetricData struct {
+	Label *string `json:"label,omitempty"`
 
-Label *string `json:"label,omitempty"`
+	Average *float64 `json:"average,omitempty"`
 
-Average *float64 `json:"average,omitempty"`
+	Maximum *float64 `json:"maximum,omitempty"`
 
-Maximum *float64 `json:"maximum,omitempty"`
+	Minimum *float64 `json:"minimum,omitempty"`
 
-Minimum *float64 `json:"minimum,omitempty"`
+	Sum *float64 `json:"sum,omitempty"`
 
-Sum *float64 `json:"sum,omitempty"`
-
-DataPointList []*DataPoint `json:"dataPointList,omitempty"`
+	DataPointList []*DataPoint `json:"dataPointList,omitempty"`
 }

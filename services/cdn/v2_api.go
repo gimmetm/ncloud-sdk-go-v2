@@ -9,13 +9,13 @@
 package cdn
 
 import (
+	"bytes"
 	"encoding/base64"
 	"encoding/json"
 	"io/ioutil"
 	"net/url"
 	"reflect"
 	"strings"
-	"bytes"
 
 	"golang.org/x/net/context"
 )
@@ -27,18 +27,17 @@ var (
 
 type V2ApiService service
 
-
-/* V2ApiService 
- CDN+인스턴스리스트조회
- @param getCdnPlusInstanceListRequest getCdnPlusInstanceListRequest
- @return *GetCdnPlusInstanceListResponse*/
+/* V2ApiService
+CDN+인스턴스리스트조회
+@param getCdnPlusInstanceListRequest getCdnPlusInstanceListRequest
+@return *GetCdnPlusInstanceListResponse*/
 func (a *V2ApiService) GetCdnPlusInstanceList(getCdnPlusInstanceListRequest *GetCdnPlusInstanceListRequest) (*GetCdnPlusInstanceListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetCdnPlusInstanceListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetCdnPlusInstanceListResponse
 	)
 
 	// create path and map variables
@@ -48,9 +47,8 @@ func (a *V2ApiService) GetCdnPlusInstanceList(getCdnPlusInstanceListRequest *Get
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -59,8 +57,7 @@ func (a *V2ApiService) GetCdnPlusInstanceList(getCdnPlusInstanceListRequest *Get
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -98,21 +95,20 @@ func (a *V2ApiService) GetCdnPlusInstanceList(getCdnPlusInstanceListRequest *Get
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CDN+퍼지기록조회
- @param getCdnPlusPurgeHistoryListRequest getCdnPlusPurgeHistoryListRequest
- @return *GetCdnPlusPurgeHistoryListResponse*/
+/* V2ApiService
+CDN+퍼지기록조회
+@param getCdnPlusPurgeHistoryListRequest getCdnPlusPurgeHistoryListRequest
+@return *GetCdnPlusPurgeHistoryListResponse*/
 func (a *V2ApiService) GetCdnPlusPurgeHistoryList(getCdnPlusPurgeHistoryListRequest *GetCdnPlusPurgeHistoryListRequest) (*GetCdnPlusPurgeHistoryListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetCdnPlusPurgeHistoryListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetCdnPlusPurgeHistoryListResponse
 	)
 
 	// create path and map variables
@@ -122,9 +118,8 @@ func (a *V2ApiService) GetCdnPlusPurgeHistoryList(getCdnPlusPurgeHistoryListRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -133,8 +128,7 @@ func (a *V2ApiService) GetCdnPlusPurgeHistoryList(getCdnPlusPurgeHistoryListRequ
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -172,21 +166,20 @@ func (a *V2ApiService) GetCdnPlusPurgeHistoryList(getCdnPlusPurgeHistoryListRequ
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- Global CDN 인스턴스리스트조회
- @param getGlobalCdnInstanceListRequest getGlobalCdnInstanceListRequest
- @return *GetGlobalCdnInstanceListResponse*/
+/* V2ApiService
+Global CDN 인스턴스리스트조회
+@param getGlobalCdnInstanceListRequest getGlobalCdnInstanceListRequest
+@return *GetGlobalCdnInstanceListResponse*/
 func (a *V2ApiService) GetGlobalCdnInstanceList(getGlobalCdnInstanceListRequest *GetGlobalCdnInstanceListRequest) (*GetGlobalCdnInstanceListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetGlobalCdnInstanceListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetGlobalCdnInstanceListResponse
 	)
 
 	// create path and map variables
@@ -196,9 +189,8 @@ func (a *V2ApiService) GetGlobalCdnInstanceList(getGlobalCdnInstanceListRequest 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -207,8 +199,7 @@ func (a *V2ApiService) GetGlobalCdnInstanceList(getGlobalCdnInstanceListRequest 
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -246,21 +237,20 @@ func (a *V2ApiService) GetGlobalCdnInstanceList(getGlobalCdnInstanceListRequest 
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- Global CDN퍼지기록조회
- @param getGlobalCdnPurgeHistoryListRequest getGlobalCdnPurgeHistoryListRequest
- @return *GetGlobalCdnPurgeHistoryListResponse*/
+/* V2ApiService
+Global CDN퍼지기록조회
+@param getGlobalCdnPurgeHistoryListRequest getGlobalCdnPurgeHistoryListRequest
+@return *GetGlobalCdnPurgeHistoryListResponse*/
 func (a *V2ApiService) GetGlobalCdnPurgeHistoryList(getGlobalCdnPurgeHistoryListRequest *GetGlobalCdnPurgeHistoryListRequest) (*GetGlobalCdnPurgeHistoryListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetGlobalCdnPurgeHistoryListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetGlobalCdnPurgeHistoryListResponse
 	)
 
 	// create path and map variables
@@ -270,9 +260,8 @@ func (a *V2ApiService) GetGlobalCdnPurgeHistoryList(getGlobalCdnPurgeHistoryList
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -281,8 +270,7 @@ func (a *V2ApiService) GetGlobalCdnPurgeHistoryList(getGlobalCdnPurgeHistoryList
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -320,21 +308,20 @@ func (a *V2ApiService) GetGlobalCdnPurgeHistoryList(getGlobalCdnPurgeHistoryList
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CDN+퍼지요청
- @param requestCdnPlusPurgeRequest requestCdnPlusPurgeRequest
- @return *RequestCdnPlusPurgeResponse*/
+/* V2ApiService
+CDN+퍼지요청
+@param requestCdnPlusPurgeRequest requestCdnPlusPurgeRequest
+@return *RequestCdnPlusPurgeResponse*/
 func (a *V2ApiService) RequestCdnPlusPurge(requestCdnPlusPurgeRequest *RequestCdnPlusPurgeRequest) (*RequestCdnPlusPurgeResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  RequestCdnPlusPurgeResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     RequestCdnPlusPurgeResponse
 	)
 
 	// create path and map variables
@@ -344,9 +331,8 @@ func (a *V2ApiService) RequestCdnPlusPurge(requestCdnPlusPurgeRequest *RequestCd
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -355,8 +341,7 @@ func (a *V2ApiService) RequestCdnPlusPurge(requestCdnPlusPurgeRequest *RequestCd
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -394,21 +379,20 @@ func (a *V2ApiService) RequestCdnPlusPurge(requestCdnPlusPurgeRequest *RequestCd
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- Global CDN퍼지요청
- @param requestGlobalCdnPurgeRequest requestGlobalCdnPurgeRequest
- @return *RequestGlobalCdnPurgeResponse*/
+/* V2ApiService
+Global CDN퍼지요청
+@param requestGlobalCdnPurgeRequest requestGlobalCdnPurgeRequest
+@return *RequestGlobalCdnPurgeResponse*/
 func (a *V2ApiService) RequestGlobalCdnPurge(requestGlobalCdnPurgeRequest *RequestGlobalCdnPurgeRequest) (*RequestGlobalCdnPurgeResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  RequestGlobalCdnPurgeResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     RequestGlobalCdnPurgeResponse
 	)
 
 	// create path and map variables
@@ -418,9 +402,8 @@ func (a *V2ApiService) RequestGlobalCdnPurge(requestGlobalCdnPurgeRequest *Reque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -429,8 +412,7 @@ func (a *V2ApiService) RequestGlobalCdnPurge(requestGlobalCdnPurgeRequest *Reque
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -468,7 +450,5 @@ func (a *V2ApiService) RequestGlobalCdnPurge(requestGlobalCdnPurgeRequest *Reque
 		}
 	}
 
-
 	return &successPayload, err
 }
-

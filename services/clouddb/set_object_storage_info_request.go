@@ -11,14 +11,14 @@ package clouddb
 type SetObjectStorageInfoRequest struct {
 
 	// 오브젝트스토리지 AccessKey
-ObjectStorageAccessKey *string `json:"objectStorageAccessKey"`
+	ObjectStorageAccessKey *string `json:"objectStorageAccessKey"`
 
 	// 오브젝트스토리지 SecretKey
-ObjectStorageSecretKey *string `json:"objectStorageSecretKey"`
+	ObjectStorageSecretKey *string `json:"objectStorageSecretKey"`
 
 	// 엔드포인트
-Endpoint *string `json:"endpoint"`
+	Endpoint *string `json:"endpoint"`
 
 	// 버킷이름
-BucketName *string `json:"bucketName"`
+	BucketName *string `json:"bucketName"`
 }

@@ -11,8 +11,8 @@ package server
 type ChangeBlockStorageVolumeSizeRequest struct {
 
 	// 블록스토리지인스턴스번호
-BlockStorageInstanceNo *string `json:"blockStorageInstanceNo"`
+	BlockStorageInstanceNo *string `json:"blockStorageInstanceNo"`
 
 	// 블록스토리지사이즈
-BlockStorageSize *int64 `json:"blockStorageSize"`
+	BlockStorageSize *int64 `json:"blockStorageSize"`
 }

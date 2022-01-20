@@ -11,14 +11,14 @@ package clouddb
 type RestoreDmsDatabaseRequest struct {
 
 	// 클라우드DB인스턴스번호
-CloudDBInstanceNo *string `json:"cloudDBInstanceNo"`
+	CloudDBInstanceNo *string `json:"cloudDBInstanceNo"`
 
 	// 파일이름
-FileName *string `json:"fileName"`
+	FileName *string `json:"fileName"`
 
 	// 복구용여부
-IsRecovery *bool `json:"isRecovery"`
+	IsRecovery *bool `json:"isRecovery"`
 
 	// 새로운데이터베이스이름
-NewDatabaseName *string `json:"newDatabaseName"`
+	NewDatabaseName *string `json:"newDatabaseName"`
 }

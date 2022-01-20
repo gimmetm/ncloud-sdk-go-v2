@@ -11,32 +11,32 @@ package vautoscaling
 type GetScheduledActionListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 오토스케일링그룹번호
-AutoScalingGroupNo *string `json:"autoScalingGroupNo"`
+	AutoScalingGroupNo *string `json:"autoScalingGroupNo"`
 
 	// 스케쥴액션번호리스트
-ScheduledActionNoList []*string `json:"scheduledActionNoList,omitempty"`
+	ScheduledActionNoList []*string `json:"scheduledActionNoList,omitempty"`
 
 	// 스케쥴액션이름리스트
-ScheduledActionNameList []*string `json:"scheduledActionNameList,omitempty"`
+	ScheduledActionNameList []*string `json:"scheduledActionNameList,omitempty"`
 
 	// 스케쥴시작일시
-StartTime *string `json:"startTime,omitempty"`
+	StartTime *string `json:"startTime,omitempty"`
 
 	// 스케쥴종료일시
-EndTime *string `json:"endTime,omitempty"`
+	EndTime *string `json:"endTime,omitempty"`
 
 	// 페이지번호
-PageNo *int32 `json:"pageNo,omitempty"`
+	PageNo *int32 `json:"pageNo,omitempty"`
 
 	// 페이지사이즈
-PageSize *int32 `json:"pageSize,omitempty"`
+	PageSize *int32 `json:"pageSize,omitempty"`
 
 	// 정렬대상
-SortedBy *string `json:"sortedBy,omitempty"`
+	SortedBy *string `json:"sortedBy,omitempty"`
 
 	// 정렬순서
-SortingOrder *string `json:"sortingOrder,omitempty"`
+	SortingOrder *string `json:"sortingOrder,omitempty"`
 }

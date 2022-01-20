@@ -11,8 +11,8 @@ package vpc
 type GetNatGatewayInstanceDetailRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// NATGatway인스턴스번호
-NatGatewayInstanceNo *string `json:"natGatewayInstanceNo,omitempty"`
+	NatGatewayInstanceNo *string `json:"natGatewayInstanceNo,omitempty"`
 }

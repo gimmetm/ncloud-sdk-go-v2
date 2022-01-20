@@ -11,11 +11,11 @@ package vnas
 type RemoveNasVolumeAccessControlRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// NAS볼륨인스턴스번호
-NasVolumeInstanceNo *string `json:"nasVolumeInstanceNo"`
+	NasVolumeInstanceNo *string `json:"nasVolumeInstanceNo"`
 
 	// 서버인스턴스번호리스트
-ServerInstanceNoList []*string `json:"serverInstanceNoList"`
+	ServerInstanceNoList []*string `json:"serverInstanceNoList"`
 }

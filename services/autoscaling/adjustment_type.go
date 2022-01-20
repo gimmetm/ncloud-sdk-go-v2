@@ -9,6 +9,5 @@
 package autoscaling
 
 type AdjustmentType struct {
-
-AdjustmentType *CommonCode `json:"adjustmentType,omitempty"`
+	AdjustmentType *CommonCode `json:"adjustmentType,omitempty"`
 }

@@ -11,32 +11,32 @@ package vnas
 type CreateNasVolumeInstanceRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// ZONE코드
-ZoneCode *string `json:"zoneCode,omitempty"`
+	ZoneCode *string `json:"zoneCode,omitempty"`
 
 	// 볼륨이름
-VolumeName *string `json:"volumeName,omitempty"`
+	VolumeName *string `json:"volumeName,omitempty"`
 
 	// 볼륨사이즈
-VolumeSize *int32 `json:"volumeSize"`
+	VolumeSize *int32 `json:"volumeSize"`
 
 	// 볼륨할당프로토콜유형코드
-VolumeAllotmentProtocolTypeCode *string `json:"volumeAllotmentProtocolTypeCode"`
+	VolumeAllotmentProtocolTypeCode *string `json:"volumeAllotmentProtocolTypeCode"`
 
 	// 서버인스턴스번호리스트
-ServerInstanceNoList []*string `json:"serverInstanceNoList,omitempty"`
+	ServerInstanceNoList []*string `json:"serverInstanceNoList,omitempty"`
 
 	// CIFS유저이름
-CifsUserName *string `json:"cifsUserName,omitempty"`
+	CifsUserName *string `json:"cifsUserName,omitempty"`
 
 	// CIFS유저비밀번호
-CifsUserPassword *string `json:"cifsUserPassword,omitempty"`
+	CifsUserPassword *string `json:"cifsUserPassword,omitempty"`
 
 	// 볼륨암호화여부
-IsEncryptedVolume *bool `json:"isEncryptedVolume,omitempty"`
+	IsEncryptedVolume *bool `json:"isEncryptedVolume,omitempty"`
 
 	// NAS볼륨설명
-NasVolumeDescription *string `json:"nasVolumeDescription,omitempty"`
+	NasVolumeDescription *string `json:"nasVolumeDescription,omitempty"`
 }

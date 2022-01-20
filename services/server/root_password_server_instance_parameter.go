@@ -11,8 +11,8 @@ package server
 type RootPasswordServerInstanceParameter struct {
 
 	// 서버인스턴스번호
-ServerInstanceNo *string `json:"serverInstanceNo,omitempty"`
+	ServerInstanceNo *string `json:"serverInstanceNo,omitempty"`
 
 	// 사설키
-PrivateKey *string `json:"privateKey,omitempty"`
+	PrivateKey *string `json:"privateKey,omitempty"`
 }

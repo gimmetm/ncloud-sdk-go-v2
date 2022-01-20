@@ -11,5 +11,5 @@ package server
 type DeleteMemberServerImagesRequest struct {
 
 	// 회원서버이미지번호리스트
-MemberServerImageNoList []*string `json:"memberServerImageNoList"`
+	MemberServerImageNoList []*string `json:"memberServerImageNoList"`
 }

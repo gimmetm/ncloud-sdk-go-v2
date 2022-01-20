@@ -11,11 +11,11 @@ package vnas
 type SetNasVolumeAccessControlRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// NAS볼륨인스턴스번호
-NasVolumeInstanceNo *string `json:"nasVolumeInstanceNo"`
+	NasVolumeInstanceNo *string `json:"nasVolumeInstanceNo"`
 
 	// 서버인스턴스번호리스트
-ServerInstanceNoList []*string `json:"serverInstanceNoList,omitempty"`
+	ServerInstanceNoList []*string `json:"serverInstanceNoList,omitempty"`
 }

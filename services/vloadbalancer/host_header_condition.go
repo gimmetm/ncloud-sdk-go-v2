@@ -11,5 +11,5 @@ package vloadbalancer
 type HostHeaderCondition struct {
 
 	// 호스트헤더리스트
-HostHeaderList []*string `json:"hostHeaderList,omitempty"`
+	HostHeaderList []*string `json:"hostHeaderList,omitempty"`
 }

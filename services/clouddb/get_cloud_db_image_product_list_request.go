@@ -11,14 +11,14 @@ package clouddb
 type GetCloudDbImageProductListRequest struct {
 
 	// 제외할상품코드
-ExclusionProductCode *string `json:"exclusionProductCode,omitempty"`
+	ExclusionProductCode *string `json:"exclusionProductCode,omitempty"`
 
 	// 조회할상품코드
-ProductCode *string `json:"productCode,omitempty"`
+	ProductCode *string `json:"productCode,omitempty"`
 
 	// DB유형코드
-DbKindCode *string `json:"dbKindCode,omitempty"`
+	DbKindCode *string `json:"dbKindCode,omitempty"`
 
 	// 리전번호
-RegionNo *string `json:"regionNo,omitempty"`
+	RegionNo *string `json:"regionNo,omitempty"`
 }

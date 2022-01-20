@@ -11,5 +11,5 @@ package clouddb
 type GetCloudDbConfigGroupListRequest struct {
 
 	// DB유형코드
-DbKindCode *string `json:"dbKindCode"`
+	DbKindCode *string `json:"dbKindCode"`
 }

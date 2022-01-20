@@ -11,8 +11,8 @@ package vautoscaling
 type SuspendedProcess struct {
 
 	// 프로세스
-Process *CommonCode `json:"process,omitempty"`
+	Process *CommonCode `json:"process,omitempty"`
 
 	// 프로세스일시정지원인
-SuspensionReason *string `json:"suspensionReason,omitempty"`
+	SuspensionReason *string `json:"suspensionReason,omitempty"`
 }

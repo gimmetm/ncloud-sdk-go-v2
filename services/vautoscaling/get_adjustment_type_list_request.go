@@ -11,5 +11,5 @@ package vautoscaling
 type GetAdjustmentTypeListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 }

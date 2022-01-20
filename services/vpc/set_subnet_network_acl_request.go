@@ -11,11 +11,11 @@ package vpc
 type SetSubnetNetworkAclRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 네트워크ACL번호
-NetworkAclNo *string `json:"networkAclNo"`
+	NetworkAclNo *string `json:"networkAclNo"`
 
 	// 서브넷번호
-SubnetNo *string `json:"subnetNo"`
+	SubnetNo *string `json:"subnetNo"`
 }

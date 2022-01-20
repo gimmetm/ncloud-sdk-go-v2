@@ -11,11 +11,11 @@ package vpc
 type SetNatGatewayDescriptionRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// NATGateway인스턴스번호
-NatGatewayInstanceNo *string `json:"natGatewayInstanceNo"`
+	NatGatewayInstanceNo *string `json:"natGatewayInstanceNo"`
 
 	// NATGateway설명
-NatGatewayDescription *string `json:"natGatewayDescription,omitempty"`
+	NatGatewayDescription *string `json:"natGatewayDescription,omitempty"`
 }

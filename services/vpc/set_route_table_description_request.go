@@ -11,11 +11,11 @@ package vpc
 type SetRouteTableDescriptionRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 라우트테이블번호
-RouteTableNo *string `json:"routeTableNo"`
+	RouteTableNo *string `json:"routeTableNo"`
 
 	// 라우트테이블설명
-RouteTableDescription *string `json:"routeTableDescription,omitempty"`
+	RouteTableDescription *string `json:"routeTableDescription,omitempty"`
 }

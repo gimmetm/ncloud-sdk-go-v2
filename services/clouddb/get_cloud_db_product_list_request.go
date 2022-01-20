@@ -11,17 +11,17 @@ package clouddb
 type GetCloudDbProductListRequest struct {
 
 	// 제외할상품코드
-ExclusionProductCode *string `json:"exclusionProductCode,omitempty"`
+	ExclusionProductCode *string `json:"exclusionProductCode,omitempty"`
 
 	// CloudDB이미지상품코드
-CloudDBImageProductCode *string `json:"cloudDBImageProductCode"`
+	CloudDBImageProductCode *string `json:"cloudDBImageProductCode"`
 
 	// 조회할상품코드
-ProductCode *string `json:"productCode,omitempty"`
+	ProductCode *string `json:"productCode,omitempty"`
 
 	// 리전번호
-RegionNo *string `json:"regionNo,omitempty"`
+	RegionNo *string `json:"regionNo,omitempty"`
 
 	// zone번호
-ZoneNo *string `json:"zoneNo,omitempty"`
+	ZoneNo *string `json:"zoneNo,omitempty"`
 }

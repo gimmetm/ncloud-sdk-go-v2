@@ -11,11 +11,11 @@ package vautoscaling
 type ResumeProcessesRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 오토스케일링그룹번호
-AutoScalingGroupNo *string `json:"autoScalingGroupNo"`
+	AutoScalingGroupNo *string `json:"autoScalingGroupNo"`
 
 	// 스케일링프로세스코드리스트
-ScalingProcessCodeList []*string `json:"scalingProcessCodeList"`
+	ScalingProcessCodeList []*string `json:"scalingProcessCodeList"`
 }

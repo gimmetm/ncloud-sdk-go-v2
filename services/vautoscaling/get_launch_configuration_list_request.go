@@ -11,20 +11,20 @@ package vautoscaling
 type GetLaunchConfigurationListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 론치설정번호리스트
-LaunchConfigurationNoList []*string `json:"launchConfigurationNoList,omitempty"`
+	LaunchConfigurationNoList []*string `json:"launchConfigurationNoList,omitempty"`
 
 	// 론치설정이름리스트
-LaunchConfigurationNameList []*string `json:"launchConfigurationNameList,omitempty"`
+	LaunchConfigurationNameList []*string `json:"launchConfigurationNameList,omitempty"`
 
 	// 페이지번호
-PageNo *int32 `json:"pageNo,omitempty"`
+	PageNo *int32 `json:"pageNo,omitempty"`
 
 	// 페이지사이즈
-PageSize *int32 `json:"pageSize,omitempty"`
+	PageSize *int32 `json:"pageSize,omitempty"`
 
 	// 정렬리스트
-SortList []*Sort `json:"sortList,omitempty"`
+	SortList []*Sort `json:"sortList,omitempty"`
 }

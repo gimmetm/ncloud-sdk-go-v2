@@ -11,8 +11,8 @@ package server
 type RootPasswordServerInstance struct {
 
 	// 서버인스턴스번호
-ServerInstanceNo *string `json:"serverInstanceNo,omitempty"`
+	ServerInstanceNo *string `json:"serverInstanceNo,omitempty"`
 
 	// 루트패스워드
-RootPassword *string `json:"rootPassword,omitempty"`
+	RootPassword *string `json:"rootPassword,omitempty"`
 }

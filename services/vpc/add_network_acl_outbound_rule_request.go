@@ -11,11 +11,11 @@ package vpc
 type AddNetworkAclOutboundRuleRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 네트워크ACL번호
-NetworkAclNo *string `json:"networkAclNo"`
+	NetworkAclNo *string `json:"networkAclNo"`
 
 	// 네트워크ACLRule리스트
-NetworkAclRuleList []*AddNetworkAclRuleParameter `json:"networkAclRuleList"`
+	NetworkAclRuleList []*AddNetworkAclRuleParameter `json:"networkAclRuleList"`
 }

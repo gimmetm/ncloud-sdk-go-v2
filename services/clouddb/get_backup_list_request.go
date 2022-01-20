@@ -11,11 +11,11 @@ package clouddb
 type GetBackupListRequest struct {
 
 	// 클라우드DB인스턴스번호
-CloudDBInstanceNo *string `json:"cloudDBInstanceNo"`
+	CloudDBInstanceNo *string `json:"cloudDBInstanceNo"`
 
 	// 데이터베이스이름
-DatabaseName *string `json:"databaseName,omitempty"`
+	DatabaseName *string `json:"databaseName,omitempty"`
 
 	// 백업유형코드
-BackupTypeCode *string `json:"backupTypeCode,omitempty"`
+	BackupTypeCode *string `json:"backupTypeCode,omitempty"`
 }

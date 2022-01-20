@@ -9,14 +9,13 @@
 package vloadbalancer
 
 type ChangeTargetGroupHealthCheckConfigurationResponse struct {
+	RequestId *string `json:"requestId,omitempty"`
 
-RequestId *string `json:"requestId,omitempty"`
+	ReturnCode *string `json:"returnCode,omitempty"`
 
-ReturnCode *string `json:"returnCode,omitempty"`
+	ReturnMessage *string `json:"returnMessage,omitempty"`
 
-ReturnMessage *string `json:"returnMessage,omitempty"`
+	TotalRows *int32 `json:"totalRows,omitempty"`
 
-TotalRows *int32 `json:"totalRows,omitempty"`
-
-TargetGroupList []*TargetGroup `json:"targetGroupList,omitempty"`
+	TargetGroupList []*TargetGroup `json:"targetGroupList,omitempty"`
 }

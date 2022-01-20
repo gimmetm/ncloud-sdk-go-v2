@@ -11,14 +11,14 @@ package vloadbalancer
 type ChangeLoadBalancerInstanceConfigurationRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 연결타임아웃
-IdleTimeout *int32 `json:"idleTimeout,omitempty"`
+	IdleTimeout *int32 `json:"idleTimeout,omitempty"`
 
 	// 로드밸런서인스턴스번호
-LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo"`
+	LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo"`
 
 	// 부하처리성능유형코드
-ThroughputTypeCode *string `json:"throughputTypeCode,omitempty"`
+	ThroughputTypeCode *string `json:"throughputTypeCode,omitempty"`
 }

@@ -11,14 +11,14 @@ package vpc
 type AddRouteTableSubnetRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 라우트테이블번호
-RouteTableNo *string `json:"routeTableNo"`
+	RouteTableNo *string `json:"routeTableNo"`
 
 	// 서브넷번호리스트
-SubnetNoList []*string `json:"subnetNoList"`
+	SubnetNoList []*string `json:"subnetNoList"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo"`
+	VpcNo *string `json:"vpcNo"`
 }

@@ -11,17 +11,17 @@ package vloadbalancer
 type LoadBalancerRule struct {
 
 	// 로드밸런서룰번호
-LoadBalancerRuleNo *string `json:"loadBalancerRuleNo,omitempty"`
+	LoadBalancerRuleNo *string `json:"loadBalancerRuleNo,omitempty"`
 
 	// 로드밸런서리스너번호
-LoadBalancerListenerNo *string `json:"loadBalancerListenerNo,omitempty"`
+	LoadBalancerListenerNo *string `json:"loadBalancerListenerNo,omitempty"`
 
 	// 우선순위
-Priority *int32 `json:"priority,omitempty"`
+	Priority *int32 `json:"priority,omitempty"`
 
 	// 로드밸런서룰조건리스트
-LoadBalancerRuleConditionList []*LoadBalancerRuleCondition `json:"loadBalancerRuleConditionList,omitempty"`
+	LoadBalancerRuleConditionList []*LoadBalancerRuleCondition `json:"loadBalancerRuleConditionList,omitempty"`
 
 	// 로드밸런서룰액션리스트
-LoadBalancerRuleActionList []*LoadBalancerRuleAction `json:"loadBalancerRuleActionList,omitempty"`
+	LoadBalancerRuleActionList []*LoadBalancerRuleAction `json:"loadBalancerRuleActionList,omitempty"`
 }

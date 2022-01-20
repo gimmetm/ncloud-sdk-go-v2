@@ -11,8 +11,8 @@ package vpc
 type DeleteRouteTableRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 라우트테이블번호
-RouteTableNo *string `json:"routeTableNo"`
+	RouteTableNo *string `json:"routeTableNo"`
 }

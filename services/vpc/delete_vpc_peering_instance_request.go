@@ -11,8 +11,8 @@ package vpc
 type DeleteVpcPeeringInstanceRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// VPCPeering인스턴스번호
-VpcPeeringInstanceNo *string `json:"vpcPeeringInstanceNo"`
+	VpcPeeringInstanceNo *string `json:"vpcPeeringInstanceNo"`
 }

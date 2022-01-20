@@ -11,11 +11,11 @@ package vpc
 type AcceptOrRejectVpcPeeringRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// VPCPeering인스턴스번호
-VpcPeeringInstanceNo *string `json:"vpcPeeringInstanceNo"`
+	VpcPeeringInstanceNo *string `json:"vpcPeeringInstanceNo"`
 
 	// 수락여부
-IsAccept *bool `json:"isAccept"`
+	IsAccept *bool `json:"isAccept"`
 }

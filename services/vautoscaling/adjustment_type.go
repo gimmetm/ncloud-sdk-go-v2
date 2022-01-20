@@ -11,8 +11,8 @@ package vautoscaling
 type AdjustmentType struct {
 
 	// 코드
-Code *string `json:"code,omitempty"`
+	Code *string `json:"code,omitempty"`
 
 	// 코드이름
-CodeName *string `json:"codeName,omitempty"`
+	CodeName *string `json:"codeName,omitempty"`
 }

@@ -11,5 +11,5 @@ package vserver
 type DeleteLoginKeysRequest struct {
 
 	// 키이름리스트
-KeyNameList []*string `json:"keyNameList"`
+	KeyNameList []*string `json:"keyNameList"`
 }

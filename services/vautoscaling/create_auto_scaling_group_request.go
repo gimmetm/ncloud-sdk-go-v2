@@ -11,44 +11,44 @@ package vautoscaling
 type CreateAutoScalingGroupRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 론치설정번호
-LaunchConfigurationNo *string `json:"launchConfigurationNo"`
+	LaunchConfigurationNo *string `json:"launchConfigurationNo"`
 
 	// 오토스케일링그룹이름
-AutoScalingGroupName *string `json:"autoScalingGroupName,omitempty"`
+	AutoScalingGroupName *string `json:"autoScalingGroupName,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo"`
+	VpcNo *string `json:"vpcNo"`
 
 	// 서브넷번호
-SubnetNo *string `json:"subnetNo"`
+	SubnetNo *string `json:"subnetNo"`
 
 	// ACG번호리스트
-AccessControlGroupNoList []*string `json:"accessControlGroupNoList"`
+	AccessControlGroupNoList []*string `json:"accessControlGroupNoList"`
 
 	// 서버이름Prefix
-ServerNamePrefix *string `json:"serverNamePrefix,omitempty"`
+	ServerNamePrefix *string `json:"serverNamePrefix,omitempty"`
 
 	// 최소용량
-MinSize *int32 `json:"minSize"`
+	MinSize *int32 `json:"minSize"`
 
 	// 최대용량
-MaxSize *int32 `json:"maxSize"`
+	MaxSize *int32 `json:"maxSize"`
 
 	// 기대용량
-DesiredCapacity *int32 `json:"desiredCapacity,omitempty"`
+	DesiredCapacity *int32 `json:"desiredCapacity,omitempty"`
 
 	// 쿨다운기본값
-DefaultCoolDown *int32 `json:"defaultCoolDown,omitempty"`
+	DefaultCoolDown *int32 `json:"defaultCoolDown,omitempty"`
 
 	// 헬스체크보류기간
-HealthCheckGracePeriod *int32 `json:"healthCheckGracePeriod,omitempty"`
+	HealthCheckGracePeriod *int32 `json:"healthCheckGracePeriod,omitempty"`
 
 	// 헬스체크유형코드
-HealthCheckTypeCode *string `json:"healthCheckTypeCode,omitempty"`
+	HealthCheckTypeCode *string `json:"healthCheckTypeCode,omitempty"`
 
 	// 타겟그룹번호리스트
-TargetGroupNoList []*string `json:"targetGroupNoList,omitempty"`
+	TargetGroupNoList []*string `json:"targetGroupNoList,omitempty"`
 }

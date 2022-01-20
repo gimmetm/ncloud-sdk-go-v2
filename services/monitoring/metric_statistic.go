@@ -9,8 +9,7 @@
 package monitoring
 
 type MetricStatistic struct {
+	InstanceNo *string `json:"instanceNo,omitempty"`
 
-InstanceNo *string `json:"instanceNo,omitempty"`
-
-MetricDataList []*MetricData `json:"metricDataList,omitempty"`
+	MetricDataList []*MetricData `json:"metricDataList,omitempty"`
 }

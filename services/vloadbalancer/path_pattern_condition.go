@@ -11,5 +11,5 @@ package vloadbalancer
 type PathPatternCondition struct {
 
 	// 경로패턴리스트
-PathPatternList []*string `json:"pathPatternList,omitempty"`
+	PathPatternList []*string `json:"pathPatternList,omitempty"`
 }

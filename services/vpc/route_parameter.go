@@ -11,14 +11,14 @@ package vpc
 type RouteParameter struct {
 
 	// 목적지CIDR블록
-DestinationCidrBlock *string `json:"destinationCidrBlock"`
+	DestinationCidrBlock *string `json:"destinationCidrBlock"`
 
 	// 목적지유형코드
-TargetTypeCode *string `json:"targetTypeCode"`
+	TargetTypeCode *string `json:"targetTypeCode"`
 
 	// 목적지번호
-TargetNo *string `json:"targetNo,omitempty"`
+	TargetNo *string `json:"targetNo,omitempty"`
 
 	// 목적지이름
-TargetName *string `json:"targetName,omitempty"`
+	TargetName *string `json:"targetName,omitempty"`
 }

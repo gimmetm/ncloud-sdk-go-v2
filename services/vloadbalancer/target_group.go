@@ -11,65 +11,65 @@ package vloadbalancer
 type TargetGroup struct {
 
 	// 타겟그룹번호
-TargetGroupNo *string `json:"targetGroupNo,omitempty"`
+	TargetGroupNo *string `json:"targetGroupNo,omitempty"`
 
 	// 타겟그룹이름
-TargetGroupName *string `json:"targetGroupName,omitempty"`
+	TargetGroupName *string `json:"targetGroupName,omitempty"`
 
 	// 타겟유형
-TargetType *CommonCode `json:"targetType,omitempty"`
+	TargetType *CommonCode `json:"targetType,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 
 	// 타겟그룹프로토콜유형
-TargetGroupProtocolType *CommonCode `json:"targetGroupProtocolType,omitempty"`
+	TargetGroupProtocolType *CommonCode `json:"targetGroupProtocolType,omitempty"`
 
 	// 타겟그룹포트
-TargetGroupPort *int32 `json:"targetGroupPort,omitempty"`
+	TargetGroupPort *int32 `json:"targetGroupPort,omitempty"`
 
 	// 타겟그룹설명
-TargetGroupDescription *string `json:"targetGroupDescription,omitempty"`
+	TargetGroupDescription *string `json:"targetGroupDescription,omitempty"`
 
 	// 세션별접근사용여부
-UseStickySession *bool `json:"useStickySession,omitempty"`
+	UseStickySession *bool `json:"useStickySession,omitempty"`
 
 	// 프록시프로토콜사용여부
-UseProxyProtocol *bool `json:"useProxyProtocol,omitempty"`
+	UseProxyProtocol *bool `json:"useProxyProtocol,omitempty"`
 
 	// 알고리즘유형
-AlgorithmType *CommonCode `json:"algorithmType,omitempty"`
+	AlgorithmType *CommonCode `json:"algorithmType,omitempty"`
 
 	// 생성일시
-CreateDate *string `json:"createDate,omitempty"`
+	CreateDate *string `json:"createDate,omitempty"`
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 로드밸런서인스턴스번호
-LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo,omitempty"`
+	LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo,omitempty"`
 
 	// 헬스체크프로토콜유형
-HealthCheckProtocolType *CommonCode `json:"healthCheckProtocolType,omitempty"`
+	HealthCheckProtocolType *CommonCode `json:"healthCheckProtocolType,omitempty"`
 
 	// 타겟그룹포트
-HealthCheckPort *int32 `json:"healthCheckPort,omitempty"`
+	HealthCheckPort *int32 `json:"healthCheckPort,omitempty"`
 
 	// 헬스체크URL경로
-HealthCheckUrlPath *string `json:"healthCheckUrlPath,omitempty"`
+	HealthCheckUrlPath *string `json:"healthCheckUrlPath,omitempty"`
 
 	// 헬스체크HTTP메소드유형
-HealthCheckHttpMethodType *CommonCode `json:"healthCheckHttpMethodType,omitempty"`
+	HealthCheckHttpMethodType *CommonCode `json:"healthCheckHttpMethodType,omitempty"`
 
 	// 헬스체크주기
-HealthCheckCycle *int32 `json:"healthCheckCycle,omitempty"`
+	HealthCheckCycle *int32 `json:"healthCheckCycle,omitempty"`
 
 	// 헬스체크정상임계값
-HealthCheckUpThreshold *int32 `json:"healthCheckUpThreshold,omitempty"`
+	HealthCheckUpThreshold *int32 `json:"healthCheckUpThreshold,omitempty"`
 
 	// 헬스체크실패임계값
-HealthCheckDownThreshold *int32 `json:"healthCheckDownThreshold,omitempty"`
+	HealthCheckDownThreshold *int32 `json:"healthCheckDownThreshold,omitempty"`
 
 	// 타겟번호리스트
-TargetNoList []*string `json:"targetNoList,omitempty"`
+	TargetNoList []*string `json:"targetNoList,omitempty"`
 }

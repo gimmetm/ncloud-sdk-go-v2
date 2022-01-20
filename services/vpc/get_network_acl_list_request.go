@@ -11,23 +11,23 @@ package vpc
 type GetNetworkAclListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 네트워크ACL이름
-NetworkAclName *string `json:"networkAclName,omitempty"`
+	NetworkAclName *string `json:"networkAclName,omitempty"`
 
 	// 네트워크ACL상태코드
-NetworkAclStatusCode *string `json:"networkAclStatusCode,omitempty"`
+	NetworkAclStatusCode *string `json:"networkAclStatusCode,omitempty"`
 
 	// 네트워크ACL번호리스트
-NetworkAclNoList []*string `json:"networkAclNoList,omitempty"`
+	NetworkAclNoList []*string `json:"networkAclNoList,omitempty"`
 
 	// 페이지번호
-PageNo *int32 `json:"pageNo,omitempty"`
+	PageNo *int32 `json:"pageNo,omitempty"`
 
 	// 페이지사이즈
-PageSize *int32 `json:"pageSize,omitempty"`
+	PageSize *int32 `json:"pageSize,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 }

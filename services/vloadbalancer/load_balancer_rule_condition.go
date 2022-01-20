@@ -11,11 +11,11 @@ package vloadbalancer
 type LoadBalancerRuleCondition struct {
 
 	// 룰조건유형
-RuleConditionType *CommonCode `json:"ruleConditionType,omitempty"`
+	RuleConditionType *CommonCode `json:"ruleConditionType,omitempty"`
 
 	// 호스트헤더조건
-HostHeaderCondition *HostHeaderCondition `json:"hostHeaderCondition,omitempty"`
+	HostHeaderCondition *HostHeaderCondition `json:"hostHeaderCondition,omitempty"`
 
 	// 경로패턴조건
-PathPatternCondition *PathPatternCondition `json:"pathPatternCondition,omitempty"`
+	PathPatternCondition *PathPatternCondition `json:"pathPatternCondition,omitempty"`
 }

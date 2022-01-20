@@ -11,5 +11,5 @@ package autoscaling
 type DeleteAutoScalingLaunchConfigurationRequest struct {
 
 	// 론치설정명
-LaunchConfigurationName *string `json:"launchConfigurationName"`
+	LaunchConfigurationName *string `json:"launchConfigurationName"`
 }

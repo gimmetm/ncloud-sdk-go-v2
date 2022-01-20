@@ -11,11 +11,11 @@ package vautoscaling
 type DeleteScalingPolicyRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 오토스케일링그룹번호
-AutoScalingGroupNo *string `json:"autoScalingGroupNo"`
+	AutoScalingGroupNo *string `json:"autoScalingGroupNo"`
 
 	// 정책번호
-PolicyNo *string `json:"policyNo"`
+	PolicyNo *string `json:"policyNo"`
 }

@@ -11,5 +11,5 @@ package clouddb
 type FlushCloudDbInstanceRequest struct {
 
 	// CloudDB인스턴스번호
-CloudDBInstanceNo *string `json:"cloudDBInstanceNo"`
+	CloudDBInstanceNo *string `json:"cloudDBInstanceNo"`
 }

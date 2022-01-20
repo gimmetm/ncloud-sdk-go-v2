@@ -11,32 +11,32 @@ package vserver
 type BlockStorageSnapshotInstance struct {
 
 	// 블록스토리지스냅샷인스턴스번호
-BlockStorageSnapshotInstanceNo *string `json:"blockStorageSnapshotInstanceNo,omitempty"`
+	BlockStorageSnapshotInstanceNo *string `json:"blockStorageSnapshotInstanceNo,omitempty"`
 
 	// 블록스토리지스냅샷이름
-BlockStorageSnapshotName *string `json:"blockStorageSnapshotName,omitempty"`
+	BlockStorageSnapshotName *string `json:"blockStorageSnapshotName,omitempty"`
 
 	// 블록스토리지스냅샷볼륨사이즈
-BlockStorageSnapshotVolumeSize *int64 `json:"blockStorageSnapshotVolumeSize,omitempty"`
+	BlockStorageSnapshotVolumeSize *int64 `json:"blockStorageSnapshotVolumeSize,omitempty"`
 
 	// 원본블록스토리지인스턴스번호
-OriginalBlockStorageInstanceNo *string `json:"originalBlockStorageInstanceNo,omitempty"`
+	OriginalBlockStorageInstanceNo *string `json:"originalBlockStorageInstanceNo,omitempty"`
 
 	// 블록스토리지스냅샷인스턴스상태
-BlockStorageSnapshotInstanceStatus *CommonCode `json:"blockStorageSnapshotInstanceStatus,omitempty"`
+	BlockStorageSnapshotInstanceStatus *CommonCode `json:"blockStorageSnapshotInstanceStatus,omitempty"`
 
 	// 블록스토리지스냅샷인스턴스OP
-BlockStorageSnapshotInstanceOperation *CommonCode `json:"blockStorageSnapshotInstanceOperation,omitempty"`
+	BlockStorageSnapshotInstanceOperation *CommonCode `json:"blockStorageSnapshotInstanceOperation,omitempty"`
 
 	// 블록스토리지스냅샷인스턴스상태이름
-BlockStorageSnapshotInstanceStatusName *string `json:"blockStorageSnapshotInstanceStatusName,omitempty"`
+	BlockStorageSnapshotInstanceStatusName *string `json:"blockStorageSnapshotInstanceStatusName,omitempty"`
 
 	// 생성일시
-CreateDate *string `json:"createDate,omitempty"`
+	CreateDate *string `json:"createDate,omitempty"`
 
 	// 원본블록스토리지볼륨암호화여부
-IsEncryptedOriginalBlockStorageVolume *bool `json:"isEncryptedOriginalBlockStorageVolume,omitempty"`
+	IsEncryptedOriginalBlockStorageVolume *bool `json:"isEncryptedOriginalBlockStorageVolume,omitempty"`
 
 	// 블록스토리지스냅샷설명
-BlockStorageSnapshotDescription *string `json:"blockStorageSnapshotDescription,omitempty"`
+	BlockStorageSnapshotDescription *string `json:"blockStorageSnapshotDescription,omitempty"`
 }

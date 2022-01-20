@@ -11,5 +11,5 @@ package clouddb
 type GetDmsOperationRequest struct {
 
 	// 요청번호
-RequestNo *string `json:"requestNo"`
+	RequestNo *string `json:"requestNo"`
 }

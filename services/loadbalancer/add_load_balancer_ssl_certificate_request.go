@@ -11,14 +11,14 @@ package loadbalancer
 type AddLoadBalancerSslCertificateRequest struct {
 
 	// 인증서명
-CertificateName *string `json:"certificateName"`
+	CertificateName *string `json:"certificateName"`
 
 	// 비밀키
-PrivateKey *string `json:"privateKey"`
+	PrivateKey *string `json:"privateKey"`
 
 	// 공개키인증서
-PublicKeyCertificate *string `json:"publicKeyCertificate"`
+	PublicKeyCertificate *string `json:"publicKeyCertificate"`
 
 	// 체인인증서
-CertificateChain *string `json:"certificateChain,omitempty"`
+	CertificateChain *string `json:"certificateChain,omitempty"`
 }

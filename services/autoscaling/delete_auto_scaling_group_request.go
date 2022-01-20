@@ -11,5 +11,5 @@ package autoscaling
 type DeleteAutoScalingGroupRequest struct {
 
 	// 오토스케일링그룹명
-AutoScalingGroupName *string `json:"autoScalingGroupName"`
+	AutoScalingGroupName *string `json:"autoScalingGroupName"`
 }

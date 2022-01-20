@@ -11,35 +11,35 @@ package vpc
 type GetSubnetListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 서브넷번호리스트
-SubnetNoList []*string `json:"subnetNoList,omitempty"`
+	SubnetNoList []*string `json:"subnetNoList,omitempty"`
 
 	// 서브넷
-Subnet *string `json:"subnet,omitempty"`
+	Subnet *string `json:"subnet,omitempty"`
 
 	// 서브넷유형코드
-SubnetTypeCode *string `json:"subnetTypeCode,omitempty"`
+	SubnetTypeCode *string `json:"subnetTypeCode,omitempty"`
 
 	// 용도유형코드
-UsageTypeCode *string `json:"usageTypeCode,omitempty"`
+	UsageTypeCode *string `json:"usageTypeCode,omitempty"`
 
 	// 네트워크ACL번호
-NetworkAclNo *string `json:"networkAclNo,omitempty"`
+	NetworkAclNo *string `json:"networkAclNo,omitempty"`
 
 	// 페이지번호
-PageNo *int32 `json:"pageNo,omitempty"`
+	PageNo *int32 `json:"pageNo,omitempty"`
 
 	// 페이지사이즈
-PageSize *int32 `json:"pageSize,omitempty"`
+	PageSize *int32 `json:"pageSize,omitempty"`
 
 	// 서브넷상태코드
-SubnetStatusCode *string `json:"subnetStatusCode,omitempty"`
+	SubnetStatusCode *string `json:"subnetStatusCode,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 
 	// ZONE코드
-ZoneCode *string `json:"zoneCode,omitempty"`
+	ZoneCode *string `json:"zoneCode,omitempty"`
 }

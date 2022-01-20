@@ -11,8 +11,8 @@ package clouddb
 type CloudDbConfig struct {
 
 	// 설정명
-ConfigName *string `json:"configName,omitempty"`
+	ConfigName *string `json:"configName,omitempty"`
 
 	// 설정값
-ConfigValue *string `json:"configValue,omitempty"`
+	ConfigValue *string `json:"configValue,omitempty"`
 }

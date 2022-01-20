@@ -11,32 +11,32 @@ package vautoscaling
 type ScheduledUpdateGroupAction struct {
 
 	// 오토스케일링그룹번호
-AutoScalingGroupNo *string `json:"autoScalingGroupNo,omitempty"`
+	AutoScalingGroupNo *string `json:"autoScalingGroupNo,omitempty"`
 
 	// 스케쥴액션번호
-ScheduledActionNo *string `json:"scheduledActionNo,omitempty"`
+	ScheduledActionNo *string `json:"scheduledActionNo,omitempty"`
 
 	// 스케쥴액션이름
-ScheduledActionName *string `json:"scheduledActionName,omitempty"`
+	ScheduledActionName *string `json:"scheduledActionName,omitempty"`
 
 	// 최소용량
-MinSize *int32 `json:"minSize,omitempty"`
+	MinSize *int32 `json:"minSize,omitempty"`
 
 	// 최대용량
-MaxSize *int32 `json:"maxSize,omitempty"`
+	MaxSize *int32 `json:"maxSize,omitempty"`
 
 	// 기대용량
-DesiredCapacity *int32 `json:"desiredCapacity,omitempty"`
+	DesiredCapacity *int32 `json:"desiredCapacity,omitempty"`
 
 	// 스케쥴시작일시
-StartTime *string `json:"startTime,omitempty"`
+	StartTime *string `json:"startTime,omitempty"`
 
 	// 스케쥴종료일시
-EndTime *string `json:"endTime,omitempty"`
+	EndTime *string `json:"endTime,omitempty"`
 
 	// 반복설정
-Recurrence *string `json:"recurrence,omitempty"`
+	Recurrence *string `json:"recurrence,omitempty"`
 
 	// 타임존
-TimeZone *string `json:"timeZone,omitempty"`
+	TimeZone *string `json:"timeZone,omitempty"`
 }

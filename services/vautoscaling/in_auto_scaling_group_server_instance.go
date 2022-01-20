@@ -11,11 +11,11 @@ package vautoscaling
 type InAutoScalingGroupServerInstance struct {
 
 	// 서버인스턴스번호
-ServerInstanceNo *string `json:"serverInstanceNo,omitempty"`
+	ServerInstanceNo *string `json:"serverInstanceNo,omitempty"`
 
 	// 헬스상태
-HealthStatus *CommonCode `json:"healthStatus,omitempty"`
+	HealthStatus *CommonCode `json:"healthStatus,omitempty"`
 
 	// 라이프사이클상태
-LifecycleState *CommonCode `json:"lifecycleState,omitempty"`
+	LifecycleState *CommonCode `json:"lifecycleState,omitempty"`
 }

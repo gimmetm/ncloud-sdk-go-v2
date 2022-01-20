@@ -11,8 +11,8 @@ package server
 type Raid struct {
 
 	// RAID구분이름
-RaidTypeName *string `json:"raidTypeName,omitempty"`
+	RaidTypeName *string `json:"raidTypeName,omitempty"`
 
 	// RAID이름
-RaidName *string `json:"raidName,omitempty"`
+	RaidName *string `json:"raidName,omitempty"`
 }

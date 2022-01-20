@@ -11,5 +11,5 @@ package server
 type DeleteLoginKeyRequest struct {
 
 	// 키명
-KeyName *string `json:"keyName"`
+	KeyName *string `json:"keyName"`
 }

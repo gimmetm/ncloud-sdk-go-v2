@@ -11,26 +11,26 @@ package vpc
 type CreateSubnetRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 서브넷유형코드
-SubnetTypeCode *string `json:"subnetTypeCode"`
+	SubnetTypeCode *string `json:"subnetTypeCode"`
 
 	// 용도유형코드
-UsageTypeCode *string `json:"usageTypeCode,omitempty"`
+	UsageTypeCode *string `json:"usageTypeCode,omitempty"`
 
 	// 네트워크ACL번호
-NetworkAclNo *string `json:"networkAclNo"`
+	NetworkAclNo *string `json:"networkAclNo"`
 
 	// 서브넷
-Subnet *string `json:"subnet"`
+	Subnet *string `json:"subnet"`
 
 	// 서브넷이름
-SubnetName *string `json:"subnetName,omitempty"`
+	SubnetName *string `json:"subnetName,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo"`
+	VpcNo *string `json:"vpcNo"`
 
 	// ZONE코드
-ZoneCode *string `json:"zoneCode"`
+	ZoneCode *string `json:"zoneCode"`
 }

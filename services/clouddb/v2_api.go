@@ -9,13 +9,13 @@
 package clouddb
 
 import (
+	"bytes"
 	"encoding/base64"
 	"encoding/json"
 	"io/ioutil"
 	"net/url"
 	"reflect"
 	"strings"
-	"bytes"
 
 	"golang.org/x/net/context"
 )
@@ -27,18 +27,17 @@ var (
 
 type V2ApiService service
 
-
-/* V2ApiService 
- CloudDB인스턴스생성
- @param createCloudDBInstanceRequest createCloudDBInstanceRequest
- @return *CreateCloudDbInstanceResponse*/
+/* V2ApiService
+CloudDB인스턴스생성
+@param createCloudDBInstanceRequest createCloudDBInstanceRequest
+@return *CreateCloudDbInstanceResponse*/
 func (a *V2ApiService) CreateCloudDBInstance(createCloudDBInstanceRequest *CreateCloudDbInstanceRequest) (*CreateCloudDbInstanceResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  CreateCloudDbInstanceResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     CreateCloudDbInstanceResponse
 	)
 
 	// create path and map variables
@@ -48,9 +47,8 @@ func (a *V2ApiService) CreateCloudDBInstance(createCloudDBInstanceRequest *Creat
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -59,8 +57,7 @@ func (a *V2ApiService) CreateCloudDBInstance(createCloudDBInstanceRequest *Creat
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -98,21 +95,20 @@ func (a *V2ApiService) CreateCloudDBInstance(createCloudDBInstanceRequest *Creat
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CloudDB서버인스턴스삭제
- @param deleteCloudDBServerInstanceRequest deleteCloudDBServerInstanceRequest
- @return *DeleteCloudDbServerInstanceResponse*/
+/* V2ApiService
+CloudDB서버인스턴스삭제
+@param deleteCloudDBServerInstanceRequest deleteCloudDBServerInstanceRequest
+@return *DeleteCloudDbServerInstanceResponse*/
 func (a *V2ApiService) DeleteCloudDBServerInstance(deleteCloudDBServerInstanceRequest *DeleteCloudDbServerInstanceRequest) (*DeleteCloudDbServerInstanceResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  DeleteCloudDbServerInstanceResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     DeleteCloudDbServerInstanceResponse
 	)
 
 	// create path and map variables
@@ -122,9 +118,8 @@ func (a *V2ApiService) DeleteCloudDBServerInstance(deleteCloudDBServerInstanceRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -133,8 +128,7 @@ func (a *V2ApiService) DeleteCloudDBServerInstance(deleteCloudDBServerInstanceRe
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -172,21 +166,20 @@ func (a *V2ApiService) DeleteCloudDBServerInstance(deleteCloudDBServerInstanceRe
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- DMS파일다운로드
- @param downloadDmsFileRequest downloadDmsFileRequest
- @return *DownloadDmsFileResponse*/
+/* V2ApiService
+DMS파일다운로드
+@param downloadDmsFileRequest downloadDmsFileRequest
+@return *DownloadDmsFileResponse*/
 func (a *V2ApiService) DownloadDmsFile(downloadDmsFileRequest *DownloadDmsFileRequest) (*DownloadDmsFileResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  DownloadDmsFileResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     DownloadDmsFileResponse
 	)
 
 	// create path and map variables
@@ -196,9 +189,8 @@ func (a *V2ApiService) DownloadDmsFile(downloadDmsFileRequest *DownloadDmsFileRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -207,8 +199,7 @@ func (a *V2ApiService) DownloadDmsFile(downloadDmsFileRequest *DownloadDmsFileRe
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -246,21 +237,20 @@ func (a *V2ApiService) DownloadDmsFile(downloadDmsFileRequest *DownloadDmsFileRe
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CloudDB Flush
- @param flushCloudDBInstanceRequest flushCloudDBInstanceRequest
- @return *FlushCloudDbInstanceResponse*/
+/* V2ApiService
+CloudDB Flush
+@param flushCloudDBInstanceRequest flushCloudDBInstanceRequest
+@return *FlushCloudDbInstanceResponse*/
 func (a *V2ApiService) FlushCloudDBInstance(flushCloudDBInstanceRequest *FlushCloudDbInstanceRequest) (*FlushCloudDbInstanceResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  FlushCloudDbInstanceResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     FlushCloudDbInstanceResponse
 	)
 
 	// create path and map variables
@@ -270,9 +260,8 @@ func (a *V2ApiService) FlushCloudDBInstance(flushCloudDBInstanceRequest *FlushCl
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -281,8 +270,7 @@ func (a *V2ApiService) FlushCloudDBInstance(flushCloudDBInstanceRequest *FlushCl
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -320,21 +308,20 @@ func (a *V2ApiService) FlushCloudDBInstance(flushCloudDBInstanceRequest *FlushCl
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 백업리스트조회
- @param getBackupListRequest getBackupListRequest
- @return *GetBackupListResponse*/
+/* V2ApiService
+백업리스트조회
+@param getBackupListRequest getBackupListRequest
+@return *GetBackupListResponse*/
 func (a *V2ApiService) GetBackupList(getBackupListRequest *GetBackupListRequest) (*GetBackupListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetBackupListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetBackupListResponse
 	)
 
 	// create path and map variables
@@ -344,9 +331,8 @@ func (a *V2ApiService) GetBackupList(getBackupListRequest *GetBackupListRequest)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -355,8 +341,7 @@ func (a *V2ApiService) GetBackupList(getBackupListRequest *GetBackupListRequest)
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -394,21 +379,20 @@ func (a *V2ApiService) GetBackupList(getBackupListRequest *GetBackupListRequest)
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CloudDB설정그룹리스트조회
- @param getCloudDBConfigGroupListRequest getCloudDBConfigGroupListRequest
- @return *GetCloudDbConfigGroupListResponse*/
+/* V2ApiService
+CloudDB설정그룹리스트조회
+@param getCloudDBConfigGroupListRequest getCloudDBConfigGroupListRequest
+@return *GetCloudDbConfigGroupListResponse*/
 func (a *V2ApiService) GetCloudDBConfigGroupList(getCloudDBConfigGroupListRequest *GetCloudDbConfigGroupListRequest) (*GetCloudDbConfigGroupListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetCloudDbConfigGroupListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetCloudDbConfigGroupListResponse
 	)
 
 	// create path and map variables
@@ -418,9 +402,8 @@ func (a *V2ApiService) GetCloudDBConfigGroupList(getCloudDBConfigGroupListReques
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -429,8 +412,7 @@ func (a *V2ApiService) GetCloudDBConfigGroupList(getCloudDBConfigGroupListReques
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -468,21 +450,20 @@ func (a *V2ApiService) GetCloudDBConfigGroupList(getCloudDBConfigGroupListReques
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CloudDB이미지상품리스트
- @param getCloudDBImageProductListRequest getCloudDBImageProductListRequest
- @return *GetCloudDbImageProductListResponse*/
+/* V2ApiService
+CloudDB이미지상품리스트
+@param getCloudDBImageProductListRequest getCloudDBImageProductListRequest
+@return *GetCloudDbImageProductListResponse*/
 func (a *V2ApiService) GetCloudDBImageProductList(getCloudDBImageProductListRequest *GetCloudDbImageProductListRequest) (*GetCloudDbImageProductListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetCloudDbImageProductListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetCloudDbImageProductListResponse
 	)
 
 	// create path and map variables
@@ -492,9 +473,8 @@ func (a *V2ApiService) GetCloudDBImageProductList(getCloudDBImageProductListRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -503,8 +483,7 @@ func (a *V2ApiService) GetCloudDBImageProductList(getCloudDBImageProductListRequ
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -542,21 +521,20 @@ func (a *V2ApiService) GetCloudDBImageProductList(getCloudDBImageProductListRequ
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CloudDB인스턴스리스트조회
- @param getCloudDBInstanceListRequest getCloudDBInstanceListRequest
- @return *GetCloudDbInstanceListResponse*/
+/* V2ApiService
+CloudDB인스턴스리스트조회
+@param getCloudDBInstanceListRequest getCloudDBInstanceListRequest
+@return *GetCloudDbInstanceListResponse*/
 func (a *V2ApiService) GetCloudDBInstanceList(getCloudDBInstanceListRequest *GetCloudDbInstanceListRequest) (*GetCloudDbInstanceListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetCloudDbInstanceListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetCloudDbInstanceListResponse
 	)
 
 	// create path and map variables
@@ -566,9 +544,8 @@ func (a *V2ApiService) GetCloudDBInstanceList(getCloudDBInstanceListRequest *Get
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -577,8 +554,7 @@ func (a *V2ApiService) GetCloudDBInstanceList(getCloudDBInstanceListRequest *Get
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -616,21 +592,20 @@ func (a *V2ApiService) GetCloudDBInstanceList(getCloudDBInstanceListRequest *Get
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CloudDB상품리스트조회
- @param getCloudDBProductListRequest getCloudDBProductListRequest
- @return *GetCloudDbProductListResponse*/
+/* V2ApiService
+CloudDB상품리스트조회
+@param getCloudDBProductListRequest getCloudDBProductListRequest
+@return *GetCloudDbProductListResponse*/
 func (a *V2ApiService) GetCloudDBProductList(getCloudDBProductListRequest *GetCloudDbProductListRequest) (*GetCloudDbProductListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetCloudDbProductListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetCloudDbProductListResponse
 	)
 
 	// create path and map variables
@@ -640,9 +615,8 @@ func (a *V2ApiService) GetCloudDBProductList(getCloudDBProductListRequest *GetCl
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -651,8 +625,7 @@ func (a *V2ApiService) GetCloudDBProductList(getCloudDBProductListRequest *GetCl
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -690,21 +663,20 @@ func (a *V2ApiService) GetCloudDBProductList(getCloudDBProductListRequest *GetCl
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- DMS상태조회
- @param getDmsOperationRequest getDmsOperationRequest
- @return *GetDmsOperationResponse*/
+/* V2ApiService
+DMS상태조회
+@param getDmsOperationRequest getDmsOperationRequest
+@return *GetDmsOperationResponse*/
 func (a *V2ApiService) GetDmsOperation(getDmsOperationRequest *GetDmsOperationRequest) (*GetDmsOperationResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetDmsOperationResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetDmsOperationResponse
 	)
 
 	// create path and map variables
@@ -714,9 +686,8 @@ func (a *V2ApiService) GetDmsOperation(getDmsOperationRequest *GetDmsOperationRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -725,8 +696,7 @@ func (a *V2ApiService) GetDmsOperation(getDmsOperationRequest *GetDmsOperationRe
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -764,21 +734,20 @@ func (a *V2ApiService) GetDmsOperation(getDmsOperationRequest *GetDmsOperationRe
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 오브젝트스토리지백업리스트조회
- @param getObjectStorageBackupListRequest getObjectStorageBackupListRequest
- @return *GetObjectStorageBackupListResponse*/
+/* V2ApiService
+오브젝트스토리지백업리스트조회
+@param getObjectStorageBackupListRequest getObjectStorageBackupListRequest
+@return *GetObjectStorageBackupListResponse*/
 func (a *V2ApiService) GetObjectStorageBackupList(getObjectStorageBackupListRequest *GetObjectStorageBackupListRequest) (*GetObjectStorageBackupListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetObjectStorageBackupListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetObjectStorageBackupListResponse
 	)
 
 	// create path and map variables
@@ -788,9 +757,8 @@ func (a *V2ApiService) GetObjectStorageBackupList(getObjectStorageBackupListRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -799,8 +767,7 @@ func (a *V2ApiService) GetObjectStorageBackupList(getObjectStorageBackupListRequ
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -838,21 +805,20 @@ func (a *V2ApiService) GetObjectStorageBackupList(getObjectStorageBackupListRequ
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- CloudDB서버인스턴스재부팅
- @param rebootCloudDBServerInstanceRequest rebootCloudDBServerInstanceRequest
- @return *RebootCloudDbServerInstanceResponse*/
+/* V2ApiService
+CloudDB서버인스턴스재부팅
+@param rebootCloudDBServerInstanceRequest rebootCloudDBServerInstanceRequest
+@return *RebootCloudDbServerInstanceResponse*/
 func (a *V2ApiService) RebootCloudDBServerInstance(rebootCloudDBServerInstanceRequest *RebootCloudDbServerInstanceRequest) (*RebootCloudDbServerInstanceResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  RebootCloudDbServerInstanceResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     RebootCloudDbServerInstanceResponse
 	)
 
 	// create path and map variables
@@ -862,9 +828,8 @@ func (a *V2ApiService) RebootCloudDBServerInstance(rebootCloudDBServerInstanceRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -873,8 +838,7 @@ func (a *V2ApiService) RebootCloudDBServerInstance(rebootCloudDBServerInstanceRe
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -912,21 +876,20 @@ func (a *V2ApiService) RebootCloudDBServerInstance(rebootCloudDBServerInstanceRe
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- DMS데이터베이스복구
- @param restoreDmsDatabaseRequest restoreDmsDatabaseRequest
- @return *RestoreDmsDatabaseResponse*/
+/* V2ApiService
+DMS데이터베이스복구
+@param restoreDmsDatabaseRequest restoreDmsDatabaseRequest
+@return *RestoreDmsDatabaseResponse*/
 func (a *V2ApiService) RestoreDmsDatabase(restoreDmsDatabaseRequest *RestoreDmsDatabaseRequest) (*RestoreDmsDatabaseResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  RestoreDmsDatabaseResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     RestoreDmsDatabaseResponse
 	)
 
 	// create path and map variables
@@ -936,9 +899,8 @@ func (a *V2ApiService) RestoreDmsDatabase(restoreDmsDatabaseRequest *RestoreDmsD
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -947,8 +909,7 @@ func (a *V2ApiService) RestoreDmsDatabase(restoreDmsDatabaseRequest *RestoreDmsD
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -986,21 +947,20 @@ func (a *V2ApiService) RestoreDmsDatabase(restoreDmsDatabaseRequest *RestoreDmsD
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- DMS트랜잭션로그복구
- @param restoreDmsTransactionLogRequest restoreDmsTransactionLogRequest
- @return *RestoreDmsTransactionLogResponse*/
+/* V2ApiService
+DMS트랜잭션로그복구
+@param restoreDmsTransactionLogRequest restoreDmsTransactionLogRequest
+@return *RestoreDmsTransactionLogResponse*/
 func (a *V2ApiService) RestoreDmsTransactionLog(restoreDmsTransactionLogRequest *RestoreDmsTransactionLogRequest) (*RestoreDmsTransactionLogResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  RestoreDmsTransactionLogResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     RestoreDmsTransactionLogResponse
 	)
 
 	// create path and map variables
@@ -1010,9 +970,8 @@ func (a *V2ApiService) RestoreDmsTransactionLog(restoreDmsTransactionLogRequest 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1021,8 +980,7 @@ func (a *V2ApiService) RestoreDmsTransactionLog(restoreDmsTransactionLogRequest 
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1060,21 +1018,20 @@ func (a *V2ApiService) RestoreDmsTransactionLog(restoreDmsTransactionLogRequest 
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 오브젝트스토리지정보설정
- @param setObjectStorageInfoRequest setObjectStorageInfoRequest
- @return *SetObjectStorageInfoResponse*/
+/* V2ApiService
+오브젝트스토리지정보설정
+@param setObjectStorageInfoRequest setObjectStorageInfoRequest
+@return *SetObjectStorageInfoResponse*/
 func (a *V2ApiService) SetObjectStorageInfo(setObjectStorageInfoRequest *SetObjectStorageInfoRequest) (*SetObjectStorageInfoResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  SetObjectStorageInfoResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     SetObjectStorageInfoResponse
 	)
 
 	// create path and map variables
@@ -1084,9 +1041,8 @@ func (a *V2ApiService) SetObjectStorageInfo(setObjectStorageInfoRequest *SetObje
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{  }
+	localVarHttpContentTypes := []string{}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1095,8 +1051,7 @@ func (a *V2ApiService) SetObjectStorageInfo(setObjectStorageInfoRequest *SetObje
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1134,21 +1089,20 @@ func (a *V2ApiService) SetObjectStorageInfo(setObjectStorageInfoRequest *SetObje
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- DMS파일업로드
- @param uploadDmsFileRequest uploadDmsFileRequest
- @return *UploadDmsFileResponse*/
+/* V2ApiService
+DMS파일업로드
+@param uploadDmsFileRequest uploadDmsFileRequest
+@return *UploadDmsFileResponse*/
 func (a *V2ApiService) UploadDmsFile(uploadDmsFileRequest *UploadDmsFileRequest) (*UploadDmsFileResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  UploadDmsFileResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     UploadDmsFileResponse
 	)
 
 	// create path and map variables
@@ -1158,9 +1112,8 @@ func (a *V2ApiService) UploadDmsFile(uploadDmsFileRequest *UploadDmsFileRequest)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1169,8 +1122,7 @@ func (a *V2ApiService) UploadDmsFile(uploadDmsFileRequest *UploadDmsFileRequest)
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1208,7 +1160,5 @@ func (a *V2ApiService) UploadDmsFile(uploadDmsFileRequest *UploadDmsFileRequest)
 		}
 	}
 
-
 	return &successPayload, err
 }
-

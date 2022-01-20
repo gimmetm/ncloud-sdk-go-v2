@@ -11,8 +11,8 @@ package vloadbalancer
 type DeleteTargetGroupsRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 타겟그룹번호리스트
-TargetGroupNoList []*string `json:"targetGroupNoList"`
+	TargetGroupNoList []*string `json:"targetGroupNoList"`
 }

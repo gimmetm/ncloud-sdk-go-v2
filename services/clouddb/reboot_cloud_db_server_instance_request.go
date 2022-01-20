@@ -11,14 +11,14 @@ package clouddb
 type RebootCloudDbServerInstanceRequest struct {
 
 	// CloudDB서버인스턴스번호
-CloudDBServerInstanceNo *string `json:"cloudDBServerInstanceNo"`
+	CloudDBServerInstanceNo *string `json:"cloudDBServerInstanceNo"`
 
 	// Failover여부
-IsWithFailover *bool `json:"isWithFailover,omitempty"`
+	IsWithFailover *bool `json:"isWithFailover,omitempty"`
 
 	// 지금재부팅여부
-IsRebootNow *bool `json:"isRebootNow,omitempty"`
+	IsRebootNow *bool `json:"isRebootNow,omitempty"`
 
 	// 예약재부팅시간
-RebootTime *string `json:"rebootTime,omitempty"`
+	RebootTime *string `json:"rebootTime,omitempty"`
 }

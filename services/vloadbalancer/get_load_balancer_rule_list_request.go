@@ -11,8 +11,8 @@ package vloadbalancer
 type GetLoadBalancerRuleListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 로드밸런서리스너번호
-LoadBalancerListenerNo *string `json:"loadBalancerListenerNo"`
+	LoadBalancerListenerNo *string `json:"loadBalancerListenerNo"`
 }

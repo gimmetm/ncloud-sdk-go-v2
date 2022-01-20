@@ -9,16 +9,15 @@
 package autoscaling
 
 type ScalingPolicy struct {
+	PolicyName *string `json:"policyName,omitempty"`
 
-PolicyName *string `json:"policyName,omitempty"`
+	AutoScalingGroupName *string `json:"autoScalingGroupName,omitempty"`
 
-AutoScalingGroupName *string `json:"autoScalingGroupName,omitempty"`
+	AdjustmentType *CommonCode `json:"adjustmentType,omitempty"`
 
-AdjustmentType *CommonCode `json:"adjustmentType,omitempty"`
+	ScalingAdjustment *int32 `json:"scalingAdjustment,omitempty"`
 
-ScalingAdjustment *int32 `json:"scalingAdjustment,omitempty"`
+	Cooldown *int32 `json:"cooldown,omitempty"`
 
-Cooldown *int32 `json:"cooldown,omitempty"`
-
-MinAdjustmentStep *int32 `json:"minAdjustmentStep,omitempty"`
+	MinAdjustmentStep *int32 `json:"minAdjustmentStep,omitempty"`
 }

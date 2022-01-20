@@ -11,14 +11,14 @@ package vpc
 type CreateNetworkAclRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 네트워크ACL설명
-NetworkAclDescription *string `json:"networkAclDescription,omitempty"`
+	NetworkAclDescription *string `json:"networkAclDescription,omitempty"`
 
 	// 네트워크ACL이름
-NetworkAclName *string `json:"networkAclName,omitempty"`
+	NetworkAclName *string `json:"networkAclName,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo"`
+	VpcNo *string `json:"vpcNo"`
 }

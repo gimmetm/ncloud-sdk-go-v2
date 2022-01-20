@@ -11,38 +11,38 @@ package vserver
 type NetworkInterface struct {
 
 	// 네트워크인터페이스번호
-NetworkInterfaceNo *string `json:"networkInterfaceNo,omitempty"`
+	NetworkInterfaceNo *string `json:"networkInterfaceNo,omitempty"`
 
 	// 네트워크인터페이스이름
-NetworkInterfaceName *string `json:"networkInterfaceName,omitempty"`
+	NetworkInterfaceName *string `json:"networkInterfaceName,omitempty"`
 
 	// 서브넷번호
-SubnetNo *string `json:"subnetNo,omitempty"`
+	SubnetNo *string `json:"subnetNo,omitempty"`
 
 	// 디바이스반납시자동반납여부
-DeleteOnTermination *bool `json:"deleteOnTermination,omitempty"`
+	DeleteOnTermination *bool `json:"deleteOnTermination,omitempty"`
 
 	// Default여부
-IsDefault *bool `json:"isDefault,omitempty"`
+	IsDefault *bool `json:"isDefault,omitempty"`
 
 	// 디바이스이름
-DeviceName *string `json:"deviceName,omitempty"`
+	DeviceName *string `json:"deviceName,omitempty"`
 
 	// 네트워크인터페이스상태
-NetworkInterfaceStatus *CommonCode `json:"networkInterfaceStatus,omitempty"`
+	NetworkInterfaceStatus *CommonCode `json:"networkInterfaceStatus,omitempty"`
 
 	// 인스턴스유형
-InstanceType *CommonCode `json:"instanceType,omitempty"`
+	InstanceType *CommonCode `json:"instanceType,omitempty"`
 
 	// 인스턴스번호
-InstanceNo *string `json:"instanceNo,omitempty"`
+	InstanceNo *string `json:"instanceNo,omitempty"`
 
 	// IP주소
-Ip *string `json:"ip,omitempty"`
+	Ip *string `json:"ip,omitempty"`
 
 	// ACG번호리스트
-AccessControlGroupNoList []*string `json:"accessControlGroupNoList,omitempty"`
+	AccessControlGroupNoList []*string `json:"accessControlGroupNoList,omitempty"`
 
 	// 네트워크인터페이스설명
-NetworkInterfaceDescription *string `json:"networkInterfaceDescription,omitempty"`
+	NetworkInterfaceDescription *string `json:"networkInterfaceDescription,omitempty"`
 }

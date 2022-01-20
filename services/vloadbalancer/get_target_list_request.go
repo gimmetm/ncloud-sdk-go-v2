@@ -11,8 +11,8 @@ package vloadbalancer
 type GetTargetListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 타겟그룹번호
-TargetGroupNo *string `json:"targetGroupNo"`
+	TargetGroupNo *string `json:"targetGroupNo"`
 }

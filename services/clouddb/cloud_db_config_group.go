@@ -11,11 +11,11 @@ package clouddb
 type CloudDbConfigGroup struct {
 
 	// 설정그룹번호
-ConfigGroupNo *string `json:"configGroupNo,omitempty"`
+	ConfigGroupNo *string `json:"configGroupNo,omitempty"`
 
 	// 설정그룹유형
-ConfigGroupType *string `json:"configGroupType,omitempty"`
+	ConfigGroupType *string `json:"configGroupType,omitempty"`
 
 	// 설정그룹이름
-ConfigGroupName *string `json:"configGroupName,omitempty"`
+	ConfigGroupName *string `json:"configGroupName,omitempty"`
 }

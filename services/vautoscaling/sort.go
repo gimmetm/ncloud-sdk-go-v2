@@ -11,8 +11,8 @@ package vautoscaling
 type Sort struct {
 
 	// 정렬대상
-SortedBy *string `json:"sortedBy,omitempty"`
+	SortedBy *string `json:"sortedBy,omitempty"`
 
 	// 정렬순서
-SortingOrder *string `json:"sortingOrder,omitempty"`
+	SortingOrder *string `json:"sortingOrder,omitempty"`
 }

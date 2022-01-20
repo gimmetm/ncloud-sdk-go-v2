@@ -11,29 +11,29 @@ package vpc
 type GetNatGatewayInstanceListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// ZONE코드
-ZoneCode *string `json:"zoneCode,omitempty"`
+	ZoneCode *string `json:"zoneCode,omitempty"`
 
 	// NATGateway인스턴스번호리스트
-NatGatewayInstanceNoList []*string `json:"natGatewayInstanceNoList,omitempty"`
+	NatGatewayInstanceNoList []*string `json:"natGatewayInstanceNoList,omitempty"`
 
 	// 공인IP주소
-PublicIp *string `json:"publicIp,omitempty"`
+	PublicIp *string `json:"publicIp,omitempty"`
 
 	// VPC이름
-VpcName *string `json:"vpcName,omitempty"`
+	VpcName *string `json:"vpcName,omitempty"`
 
 	// natGatewayName
-NatGatewayName *string `json:"natGatewayName,omitempty"`
+	NatGatewayName *string `json:"natGatewayName,omitempty"`
 
 	// NATGateway인스턴스상태코드
-NatGatewayInstanceStatusCode *string `json:"natGatewayInstanceStatusCode,omitempty"`
+	NatGatewayInstanceStatusCode *string `json:"natGatewayInstanceStatusCode,omitempty"`
 
 	// 페이지번호
-PageNo *int32 `json:"pageNo,omitempty"`
+	PageNo *int32 `json:"pageNo,omitempty"`
 
 	// 페이지사이즈
-PageSize *int32 `json:"pageSize,omitempty"`
+	PageSize *int32 `json:"pageSize,omitempty"`
 }

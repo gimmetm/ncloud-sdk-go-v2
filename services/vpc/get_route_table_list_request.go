@@ -11,29 +11,29 @@ package vpc
 type GetRouteTableListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 라우트테이블번호리스트
-RouteTableNoList []*string `json:"routeTableNoList,omitempty"`
+	RouteTableNoList []*string `json:"routeTableNoList,omitempty"`
 
 	// 라우트테이블이름
-RouteTableName *string `json:"routeTableName,omitempty"`
+	RouteTableName *string `json:"routeTableName,omitempty"`
 
 	// 지원하는서브넷유형코드
-SupportedSubnetTypeCode *string `json:"supportedSubnetTypeCode,omitempty"`
+	SupportedSubnetTypeCode *string `json:"supportedSubnetTypeCode,omitempty"`
 
 	// 페이지번호
-PageNo *int32 `json:"pageNo,omitempty"`
+	PageNo *int32 `json:"pageNo,omitempty"`
 
 	// 페이지사이즈
-PageSize *int32 `json:"pageSize,omitempty"`
+	PageSize *int32 `json:"pageSize,omitempty"`
 
 	// 정렬대상
-SortedBy *string `json:"sortedBy,omitempty"`
+	SortedBy *string `json:"sortedBy,omitempty"`
 
 	// 정렬순서
-SortingOrder *string `json:"sortingOrder,omitempty"`
+	SortingOrder *string `json:"sortingOrder,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 }

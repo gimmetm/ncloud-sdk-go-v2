@@ -11,17 +11,17 @@ package vpc
 type CreateNatGatewayInstanceRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// NATGateway설명
-NatGatewayDescription *string `json:"natGatewayDescription,omitempty"`
+	NatGatewayDescription *string `json:"natGatewayDescription,omitempty"`
 
 	// NATGateway이름
-NatGatewayName *string `json:"natGatewayName,omitempty"`
+	NatGatewayName *string `json:"natGatewayName,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo"`
+	VpcNo *string `json:"vpcNo"`
 
 	// ZONE코드
-ZoneCode *string `json:"zoneCode"`
+	ZoneCode *string `json:"zoneCode"`
 }

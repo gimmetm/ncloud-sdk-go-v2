@@ -57,7 +57,7 @@ func LoadCredentials(providers []Provider) *Credentials {
 		credValue, err := p.Retrieve()
 		if err == nil {
 			credentials = Credentials{
-				value: credValue,
+				value:    credValue,
 				provider: p,
 			}
 			break
@@ -76,7 +76,6 @@ func DefaultCredentialsChain() []Provider {
 		},
 	}
 }
-
 
 type Provider interface {
 	// Retrieve returns nil if it successfully retrieved the value.

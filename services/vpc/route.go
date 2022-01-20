@@ -11,20 +11,20 @@ package vpc
 type Route struct {
 
 	// 목적지CIDR블록
-DestinationCidrBlock *string `json:"destinationCidrBlock,omitempty"`
+	DestinationCidrBlock *string `json:"destinationCidrBlock,omitempty"`
 
 	// 목적지이름
-TargetName *string `json:"targetName,omitempty"`
+	TargetName *string `json:"targetName,omitempty"`
 
 	// 라우트테이블번호
-RouteTableNo *string `json:"routeTableNo,omitempty"`
+	RouteTableNo *string `json:"routeTableNo,omitempty"`
 
 	// 목적지유형
-TargetType *CommonCode `json:"targetType,omitempty"`
+	TargetType *CommonCode `json:"targetType,omitempty"`
 
 	// 목적지번호
-TargetNo *string `json:"targetNo,omitempty"`
+	TargetNo *string `json:"targetNo,omitempty"`
 
 	// Default여부
-IsDefault *bool `json:"isDefault,omitempty"`
+	IsDefault *bool `json:"isDefault,omitempty"`
 }

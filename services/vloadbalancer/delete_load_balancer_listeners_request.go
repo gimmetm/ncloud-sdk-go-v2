@@ -11,8 +11,8 @@ package vloadbalancer
 type DeleteLoadBalancerListenersRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 로드밸런서리스너번호리스트
-LoadBalancerListenerNoList []*string `json:"loadBalancerListenerNoList"`
+	LoadBalancerListenerNoList []*string `json:"loadBalancerListenerNoList"`
 }

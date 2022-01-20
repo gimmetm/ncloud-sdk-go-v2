@@ -11,5 +11,5 @@ package loadbalancer
 type GetLoadBalancerSslCertificateListRequest struct {
 
 	// 인증서명
-CertificateName *string `json:"certificateName,omitempty"`
+	CertificateName *string `json:"certificateName,omitempty"`
 }

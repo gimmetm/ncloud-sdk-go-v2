@@ -11,32 +11,32 @@ package vpc
 type Subnet struct {
 
 	// 서브넷번호
-SubnetNo *string `json:"subnetNo,omitempty"`
+	SubnetNo *string `json:"subnetNo,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 
 	// ZONE코드
-ZoneCode *string `json:"zoneCode,omitempty"`
+	ZoneCode *string `json:"zoneCode,omitempty"`
 
 	// 서브넷이름
-SubnetName *string `json:"subnetName,omitempty"`
+	SubnetName *string `json:"subnetName,omitempty"`
 
 	// 서브넷
-Subnet *string `json:"subnet,omitempty"`
+	Subnet *string `json:"subnet,omitempty"`
 
 	// 서브넷상태
-SubnetStatus *CommonCode `json:"subnetStatus,omitempty"`
+	SubnetStatus *CommonCode `json:"subnetStatus,omitempty"`
 
 	// 생성일시
-CreateDate *string `json:"createDate,omitempty"`
+	CreateDate *string `json:"createDate,omitempty"`
 
 	// 서브넷유형
-SubnetType *CommonCode `json:"subnetType,omitempty"`
+	SubnetType *CommonCode `json:"subnetType,omitempty"`
 
 	// 용도유형
-UsageType *CommonCode `json:"usageType,omitempty"`
+	UsageType *CommonCode `json:"usageType,omitempty"`
 
 	// 네트워크ACL번호
-NetworkAclNo *string `json:"networkAclNo,omitempty"`
+	NetworkAclNo *string `json:"networkAclNo,omitempty"`
 }

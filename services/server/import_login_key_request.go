@@ -11,8 +11,8 @@ package server
 type ImportLoginKeyRequest struct {
 
 	// 키명
-KeyName *string `json:"keyName"`
+	KeyName *string `json:"keyName"`
 
 	// 공개키
-PublicKey *string `json:"publicKey"`
+	PublicKey *string `json:"publicKey"`
 }

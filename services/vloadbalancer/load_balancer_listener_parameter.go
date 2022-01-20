@@ -11,20 +11,20 @@ package vloadbalancer
 type LoadBalancerListenerParameter struct {
 
 	// SSL인증서번호
-SslCertificateNo *string `json:"sslCertificateNo,omitempty"`
+	SslCertificateNo *string `json:"sslCertificateNo,omitempty"`
 
 	// HTTP2사용여부
-UseHttp2 *bool `json:"useHttp2,omitempty"`
+	UseHttp2 *bool `json:"useHttp2,omitempty"`
 
 	// 포트
-Port *int32 `json:"port,omitempty"`
+	Port *int32 `json:"port,omitempty"`
 
 	// 프로토콜유형코드
-ProtocolTypeCode *string `json:"protocolTypeCode,omitempty"`
+	ProtocolTypeCode *string `json:"protocolTypeCode,omitempty"`
 
 	// TLS최소지원버전유형코드
-TlsMinVersionTypeCode *string `json:"tlsMinVersionTypeCode,omitempty"`
+	TlsMinVersionTypeCode *string `json:"tlsMinVersionTypeCode,omitempty"`
 
 	// 타겟그룹번호
-TargetGroupNo *string `json:"targetGroupNo"`
+	TargetGroupNo *string `json:"targetGroupNo"`
 }

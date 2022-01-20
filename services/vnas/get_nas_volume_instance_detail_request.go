@@ -11,8 +11,8 @@ package vnas
 type GetNasVolumeInstanceDetailRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// NAS볼륨인스턴스번호
-NasVolumeInstanceNo *string `json:"nasVolumeInstanceNo"`
+	NasVolumeInstanceNo *string `json:"nasVolumeInstanceNo"`
 }

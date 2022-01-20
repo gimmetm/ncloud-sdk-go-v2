@@ -11,26 +11,26 @@ package vloadbalancer
 type ChangeTargetGroupHealthCheckConfigurationRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 헬스체크주기
-HealthCheckCycle *int32 `json:"healthCheckCycle,omitempty"`
+	HealthCheckCycle *int32 `json:"healthCheckCycle,omitempty"`
 
 	// 헬스체크실패임계값
-HealthCheckDownThreshold *int32 `json:"healthCheckDownThreshold,omitempty"`
+	HealthCheckDownThreshold *int32 `json:"healthCheckDownThreshold,omitempty"`
 
 	// 헬스체크HTTP메소드유형코드
-HealthCheckHttpMethodTypeCode *string `json:"healthCheckHttpMethodTypeCode,omitempty"`
+	HealthCheckHttpMethodTypeCode *string `json:"healthCheckHttpMethodTypeCode,omitempty"`
 
 	// 헬스체크포트
-HealthCheckPort *int32 `json:"healthCheckPort,omitempty"`
+	HealthCheckPort *int32 `json:"healthCheckPort,omitempty"`
 
 	// 헬스체크정상임계값
-HealthCheckUpThreshold *int32 `json:"healthCheckUpThreshold,omitempty"`
+	HealthCheckUpThreshold *int32 `json:"healthCheckUpThreshold,omitempty"`
 
 	// 헬스체크URL경로
-HealthCheckUrlPath *string `json:"healthCheckUrlPath,omitempty"`
+	HealthCheckUrlPath *string `json:"healthCheckUrlPath,omitempty"`
 
 	// 타겟그룹번호
-TargetGroupNo *string `json:"targetGroupNo"`
+	TargetGroupNo *string `json:"targetGroupNo"`
 }

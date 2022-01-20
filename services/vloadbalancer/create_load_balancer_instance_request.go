@@ -11,32 +11,32 @@ package vloadbalancer
 type CreateLoadBalancerInstanceRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 연결타임아웃
-IdleTimeout *int32 `json:"idleTimeout,omitempty"`
+	IdleTimeout *int32 `json:"idleTimeout,omitempty"`
 
 	// 로드밸런서설명
-LoadBalancerDescription *string `json:"loadBalancerDescription,omitempty"`
+	LoadBalancerDescription *string `json:"loadBalancerDescription,omitempty"`
 
 	// 로드밸런서네트워크유형코드
-LoadBalancerNetworkTypeCode *string `json:"loadBalancerNetworkTypeCode,omitempty"`
+	LoadBalancerNetworkTypeCode *string `json:"loadBalancerNetworkTypeCode,omitempty"`
 
 	// 로드밸런서유형코드
-LoadBalancerTypeCode *string `json:"loadBalancerTypeCode"`
+	LoadBalancerTypeCode *string `json:"loadBalancerTypeCode"`
 
 	// 로드밸런서리스너리스트
-LoadBalancerListenerList []*LoadBalancerListenerParameter `json:"loadBalancerListenerList,omitempty"`
+	LoadBalancerListenerList []*LoadBalancerListenerParameter `json:"loadBalancerListenerList,omitempty"`
 
 	// 로드밸런서이름
-LoadBalancerName *string `json:"loadBalancerName,omitempty"`
+	LoadBalancerName *string `json:"loadBalancerName,omitempty"`
 
 	// 부하처리성능유형코드
-ThroughputTypeCode *string `json:"throughputTypeCode,omitempty"`
+	ThroughputTypeCode *string `json:"throughputTypeCode,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo"`
+	VpcNo *string `json:"vpcNo"`
 
 	// 서브넷번호리스트
-SubnetNoList []*string `json:"subnetNoList"`
+	SubnetNoList []*string `json:"subnetNoList"`
 }

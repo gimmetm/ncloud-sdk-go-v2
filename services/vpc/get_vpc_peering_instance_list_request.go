@@ -11,32 +11,32 @@ package vpc
 type GetVpcPeeringInstanceListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// VPCPeering인스턴스번호리스트
-VpcPeeringInstanceNoList []*string `json:"vpcPeeringInstanceNoList,omitempty"`
+	VpcPeeringInstanceNoList []*string `json:"vpcPeeringInstanceNoList,omitempty"`
 
 	// 요청VPC이름
-SourceVpcName *string `json:"sourceVpcName,omitempty"`
+	SourceVpcName *string `json:"sourceVpcName,omitempty"`
 
 	// VPCPeering이름
-VpcPeeringName *string `json:"vpcPeeringName,omitempty"`
+	VpcPeeringName *string `json:"vpcPeeringName,omitempty"`
 
 	// 수락VPC이름
-TargetVpcName *string `json:"targetVpcName,omitempty"`
+	TargetVpcName *string `json:"targetVpcName,omitempty"`
 
 	// VPCPeering인스턴스상태코드
-VpcPeeringInstanceStatusCode *string `json:"vpcPeeringInstanceStatusCode,omitempty"`
+	VpcPeeringInstanceStatusCode *string `json:"vpcPeeringInstanceStatusCode,omitempty"`
 
 	// 페이지번호
-PageNo *int32 `json:"pageNo,omitempty"`
+	PageNo *int32 `json:"pageNo,omitempty"`
 
 	// 페이지사이즈
-PageSize *int32 `json:"pageSize,omitempty"`
+	PageSize *int32 `json:"pageSize,omitempty"`
 
 	// 정렬대상
-SortedBy *string `json:"sortedBy,omitempty"`
+	SortedBy *string `json:"sortedBy,omitempty"`
 
 	// 정렬순서
-SortingOrder *string `json:"sortingOrder,omitempty"`
+	SortingOrder *string `json:"sortingOrder,omitempty"`
 }

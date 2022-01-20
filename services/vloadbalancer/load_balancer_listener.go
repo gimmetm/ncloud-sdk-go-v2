@@ -11,26 +11,26 @@ package vloadbalancer
 type LoadBalancerListener struct {
 
 	// 로드밸런서인스턴스번호
-LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo,omitempty"`
+	LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo,omitempty"`
 
 	// 로드밸런서리스너번호
-LoadBalancerListenerNo *string `json:"loadBalancerListenerNo,omitempty"`
+	LoadBalancerListenerNo *string `json:"loadBalancerListenerNo,omitempty"`
 
 	// 프로토콜유형
-ProtocolType *CommonCode `json:"protocolType,omitempty"`
+	ProtocolType *CommonCode `json:"protocolType,omitempty"`
 
 	// 포트
-Port *int32 `json:"port,omitempty"`
+	Port *int32 `json:"port,omitempty"`
 
 	// HTTP2사용여부
-UseHttp2 *bool `json:"useHttp2,omitempty"`
+	UseHttp2 *bool `json:"useHttp2,omitempty"`
 
 	// SSL인증서번호
-SslCertificateNo *string `json:"sslCertificateNo,omitempty"`
+	SslCertificateNo *string `json:"sslCertificateNo,omitempty"`
 
 	// TLS최소지원버전유형
-TlsMinVersionType *CommonCode `json:"tlsMinVersionType,omitempty"`
+	TlsMinVersionType *CommonCode `json:"tlsMinVersionType,omitempty"`
 
 	// 로드밸런서룰번호리스트
-LoadBalancerRuleNoList []*string `json:"loadBalancerRuleNoList,omitempty"`
+	LoadBalancerRuleNoList []*string `json:"loadBalancerRuleNoList,omitempty"`
 }

@@ -11,8 +11,8 @@ package vloadbalancer
 type TargetGroupWeight struct {
 
 	// 타겟그룹번호
-TargetGroupNo *string `json:"targetGroupNo,omitempty"`
+	TargetGroupNo *string `json:"targetGroupNo,omitempty"`
 
 	// 가중치
-Weight *int32 `json:"weight,omitempty"`
+	Weight *int32 `json:"weight,omitempty"`
 }

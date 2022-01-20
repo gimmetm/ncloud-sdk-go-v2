@@ -9,13 +9,13 @@
 package vloadbalancer
 
 import (
+	"bytes"
 	"encoding/base64"
 	"encoding/json"
 	"io/ioutil"
 	"net/url"
 	"reflect"
 	"strings"
-	"bytes"
 
 	"golang.org/x/net/context"
 )
@@ -27,18 +27,17 @@ var (
 
 type V2ApiService service
 
-
-/* V2ApiService 
- 타겟추가
- @param addTargetRequest addTargetRequest
- @return *AddTargetResponse*/
+/* V2ApiService
+타겟추가
+@param addTargetRequest addTargetRequest
+@return *AddTargetResponse*/
 func (a *V2ApiService) AddTarget(addTargetRequest *AddTargetRequest) (*AddTargetResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  AddTargetResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     AddTargetResponse
 	)
 
 	// create path and map variables
@@ -48,9 +47,8 @@ func (a *V2ApiService) AddTarget(addTargetRequest *AddTargetRequest) (*AddTarget
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -59,8 +57,7 @@ func (a *V2ApiService) AddTarget(addTargetRequest *AddTargetRequest) (*AddTarget
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -98,21 +95,20 @@ func (a *V2ApiService) AddTarget(addTargetRequest *AddTargetRequest) (*AddTarget
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서인스턴스설정변경
- @param changeLoadBalancerInstanceConfigurationRequest changeLoadBalancerInstanceConfigurationRequest
- @return *ChangeLoadBalancerInstanceConfigurationResponse*/
+/* V2ApiService
+로드밸런서인스턴스설정변경
+@param changeLoadBalancerInstanceConfigurationRequest changeLoadBalancerInstanceConfigurationRequest
+@return *ChangeLoadBalancerInstanceConfigurationResponse*/
 func (a *V2ApiService) ChangeLoadBalancerInstanceConfiguration(changeLoadBalancerInstanceConfigurationRequest *ChangeLoadBalancerInstanceConfigurationRequest) (*ChangeLoadBalancerInstanceConfigurationResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  ChangeLoadBalancerInstanceConfigurationResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     ChangeLoadBalancerInstanceConfigurationResponse
 	)
 
 	// create path and map variables
@@ -122,9 +118,8 @@ func (a *V2ApiService) ChangeLoadBalancerInstanceConfiguration(changeLoadBalance
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -133,8 +128,7 @@ func (a *V2ApiService) ChangeLoadBalancerInstanceConfiguration(changeLoadBalance
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -172,21 +166,20 @@ func (a *V2ApiService) ChangeLoadBalancerInstanceConfiguration(changeLoadBalance
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서리스너설정변경
- @param changeLoadBalancerListenerConfigurationRequest changeLoadBalancerListenerConfigurationRequest
- @return *ChangeLoadBalancerListenerConfigurationResponse*/
+/* V2ApiService
+로드밸런서리스너설정변경
+@param changeLoadBalancerListenerConfigurationRequest changeLoadBalancerListenerConfigurationRequest
+@return *ChangeLoadBalancerListenerConfigurationResponse*/
 func (a *V2ApiService) ChangeLoadBalancerListenerConfiguration(changeLoadBalancerListenerConfigurationRequest *ChangeLoadBalancerListenerConfigurationRequest) (*ChangeLoadBalancerListenerConfigurationResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  ChangeLoadBalancerListenerConfigurationResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     ChangeLoadBalancerListenerConfigurationResponse
 	)
 
 	// create path and map variables
@@ -196,9 +189,8 @@ func (a *V2ApiService) ChangeLoadBalancerListenerConfiguration(changeLoadBalance
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -207,8 +199,7 @@ func (a *V2ApiService) ChangeLoadBalancerListenerConfiguration(changeLoadBalance
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -246,21 +237,20 @@ func (a *V2ApiService) ChangeLoadBalancerListenerConfiguration(changeLoadBalance
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟그룹설정변경
- @param changeTargetGroupConfigurationRequest changeTargetGroupConfigurationRequest
- @return *ChangeTargetGroupConfigurationResponse*/
+/* V2ApiService
+타겟그룹설정변경
+@param changeTargetGroupConfigurationRequest changeTargetGroupConfigurationRequest
+@return *ChangeTargetGroupConfigurationResponse*/
 func (a *V2ApiService) ChangeTargetGroupConfiguration(changeTargetGroupConfigurationRequest *ChangeTargetGroupConfigurationRequest) (*ChangeTargetGroupConfigurationResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  ChangeTargetGroupConfigurationResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     ChangeTargetGroupConfigurationResponse
 	)
 
 	// create path and map variables
@@ -270,9 +260,8 @@ func (a *V2ApiService) ChangeTargetGroupConfiguration(changeTargetGroupConfigura
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -281,8 +270,7 @@ func (a *V2ApiService) ChangeTargetGroupConfiguration(changeTargetGroupConfigura
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -320,21 +308,20 @@ func (a *V2ApiService) ChangeTargetGroupConfiguration(changeTargetGroupConfigura
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟그룹헬스체크설정변경
- @param changeTargetGroupHealthCheckConfigurationRequest changeTargetGroupHealthCheckConfigurationRequest
- @return *ChangeTargetGroupHealthCheckConfigurationResponse*/
+/* V2ApiService
+타겟그룹헬스체크설정변경
+@param changeTargetGroupHealthCheckConfigurationRequest changeTargetGroupHealthCheckConfigurationRequest
+@return *ChangeTargetGroupHealthCheckConfigurationResponse*/
 func (a *V2ApiService) ChangeTargetGroupHealthCheckConfiguration(changeTargetGroupHealthCheckConfigurationRequest *ChangeTargetGroupHealthCheckConfigurationRequest) (*ChangeTargetGroupHealthCheckConfigurationResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  ChangeTargetGroupHealthCheckConfigurationResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     ChangeTargetGroupHealthCheckConfigurationResponse
 	)
 
 	// create path and map variables
@@ -344,9 +331,8 @@ func (a *V2ApiService) ChangeTargetGroupHealthCheckConfiguration(changeTargetGro
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -355,8 +341,7 @@ func (a *V2ApiService) ChangeTargetGroupHealthCheckConfiguration(changeTargetGro
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -394,21 +379,20 @@ func (a *V2ApiService) ChangeTargetGroupHealthCheckConfiguration(changeTargetGro
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서인스턴스생성
- @param createLoadBalancerInstanceRequest createLoadBalancerInstanceRequest
- @return *CreateLoadBalancerInstanceResponse*/
+/* V2ApiService
+로드밸런서인스턴스생성
+@param createLoadBalancerInstanceRequest createLoadBalancerInstanceRequest
+@return *CreateLoadBalancerInstanceResponse*/
 func (a *V2ApiService) CreateLoadBalancerInstance(createLoadBalancerInstanceRequest *CreateLoadBalancerInstanceRequest) (*CreateLoadBalancerInstanceResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  CreateLoadBalancerInstanceResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     CreateLoadBalancerInstanceResponse
 	)
 
 	// create path and map variables
@@ -418,9 +402,8 @@ func (a *V2ApiService) CreateLoadBalancerInstance(createLoadBalancerInstanceRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -429,8 +412,7 @@ func (a *V2ApiService) CreateLoadBalancerInstance(createLoadBalancerInstanceRequ
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -468,21 +450,20 @@ func (a *V2ApiService) CreateLoadBalancerInstance(createLoadBalancerInstanceRequ
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서리스너생성
- @param createLoadBalancerListenerRequest createLoadBalancerListenerRequest
- @return *CreateLoadBalancerListenerResponse*/
+/* V2ApiService
+로드밸런서리스너생성
+@param createLoadBalancerListenerRequest createLoadBalancerListenerRequest
+@return *CreateLoadBalancerListenerResponse*/
 func (a *V2ApiService) CreateLoadBalancerListener(createLoadBalancerListenerRequest *CreateLoadBalancerListenerRequest) (*CreateLoadBalancerListenerResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  CreateLoadBalancerListenerResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     CreateLoadBalancerListenerResponse
 	)
 
 	// create path and map variables
@@ -492,9 +473,8 @@ func (a *V2ApiService) CreateLoadBalancerListener(createLoadBalancerListenerRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -503,8 +483,7 @@ func (a *V2ApiService) CreateLoadBalancerListener(createLoadBalancerListenerRequ
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -542,21 +521,20 @@ func (a *V2ApiService) CreateLoadBalancerListener(createLoadBalancerListenerRequ
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟그룹생성
- @param createTargetGroupRequest createTargetGroupRequest
- @return *CreateTargetGroupResponse*/
+/* V2ApiService
+타겟그룹생성
+@param createTargetGroupRequest createTargetGroupRequest
+@return *CreateTargetGroupResponse*/
 func (a *V2ApiService) CreateTargetGroup(createTargetGroupRequest *CreateTargetGroupRequest) (*CreateTargetGroupResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  CreateTargetGroupResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     CreateTargetGroupResponse
 	)
 
 	// create path and map variables
@@ -566,9 +544,8 @@ func (a *V2ApiService) CreateTargetGroup(createTargetGroupRequest *CreateTargetG
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -577,8 +554,7 @@ func (a *V2ApiService) CreateTargetGroup(createTargetGroupRequest *CreateTargetG
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -616,21 +592,20 @@ func (a *V2ApiService) CreateTargetGroup(createTargetGroupRequest *CreateTargetG
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서인스턴스삭제
- @param deleteLoadBalancerInstancesRequest deleteLoadBalancerInstancesRequest
- @return *DeleteLoadBalancerInstancesResponse*/
+/* V2ApiService
+로드밸런서인스턴스삭제
+@param deleteLoadBalancerInstancesRequest deleteLoadBalancerInstancesRequest
+@return *DeleteLoadBalancerInstancesResponse*/
 func (a *V2ApiService) DeleteLoadBalancerInstances(deleteLoadBalancerInstancesRequest *DeleteLoadBalancerInstancesRequest) (*DeleteLoadBalancerInstancesResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  DeleteLoadBalancerInstancesResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     DeleteLoadBalancerInstancesResponse
 	)
 
 	// create path and map variables
@@ -640,9 +615,8 @@ func (a *V2ApiService) DeleteLoadBalancerInstances(deleteLoadBalancerInstancesRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -651,8 +625,7 @@ func (a *V2ApiService) DeleteLoadBalancerInstances(deleteLoadBalancerInstancesRe
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -690,21 +663,20 @@ func (a *V2ApiService) DeleteLoadBalancerInstances(deleteLoadBalancerInstancesRe
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서리스너삭제
- @param deleteLoadBalancerListenersRequest deleteLoadBalancerListenersRequest
- @return *DeleteLoadBalancerListenersResponse*/
+/* V2ApiService
+로드밸런서리스너삭제
+@param deleteLoadBalancerListenersRequest deleteLoadBalancerListenersRequest
+@return *DeleteLoadBalancerListenersResponse*/
 func (a *V2ApiService) DeleteLoadBalancerListeners(deleteLoadBalancerListenersRequest *DeleteLoadBalancerListenersRequest) (*DeleteLoadBalancerListenersResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  DeleteLoadBalancerListenersResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     DeleteLoadBalancerListenersResponse
 	)
 
 	// create path and map variables
@@ -714,9 +686,8 @@ func (a *V2ApiService) DeleteLoadBalancerListeners(deleteLoadBalancerListenersRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -725,8 +696,7 @@ func (a *V2ApiService) DeleteLoadBalancerListeners(deleteLoadBalancerListenersRe
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -764,21 +734,20 @@ func (a *V2ApiService) DeleteLoadBalancerListeners(deleteLoadBalancerListenersRe
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟그룹삭제
- @param deleteTargetGroupsRequest deleteTargetGroupsRequest
- @return *DeleteTargetGroupsResponse*/
+/* V2ApiService
+타겟그룹삭제
+@param deleteTargetGroupsRequest deleteTargetGroupsRequest
+@return *DeleteTargetGroupsResponse*/
 func (a *V2ApiService) DeleteTargetGroups(deleteTargetGroupsRequest *DeleteTargetGroupsRequest) (*DeleteTargetGroupsResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  DeleteTargetGroupsResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     DeleteTargetGroupsResponse
 	)
 
 	// create path and map variables
@@ -788,9 +757,8 @@ func (a *V2ApiService) DeleteTargetGroups(deleteTargetGroupsRequest *DeleteTarge
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -799,8 +767,7 @@ func (a *V2ApiService) DeleteTargetGroups(deleteTargetGroupsRequest *DeleteTarge
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -838,21 +805,20 @@ func (a *V2ApiService) DeleteTargetGroups(deleteTargetGroupsRequest *DeleteTarge
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서인스턴스상세조회
- @param getLoadBalancerInstanceDetailRequest getLoadBalancerInstanceDetailRequest
- @return *GetLoadBalancerInstanceDetailResponse*/
+/* V2ApiService
+로드밸런서인스턴스상세조회
+@param getLoadBalancerInstanceDetailRequest getLoadBalancerInstanceDetailRequest
+@return *GetLoadBalancerInstanceDetailResponse*/
 func (a *V2ApiService) GetLoadBalancerInstanceDetail(getLoadBalancerInstanceDetailRequest *GetLoadBalancerInstanceDetailRequest) (*GetLoadBalancerInstanceDetailResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetLoadBalancerInstanceDetailResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetLoadBalancerInstanceDetailResponse
 	)
 
 	// create path and map variables
@@ -862,9 +828,8 @@ func (a *V2ApiService) GetLoadBalancerInstanceDetail(getLoadBalancerInstanceDeta
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -873,8 +838,7 @@ func (a *V2ApiService) GetLoadBalancerInstanceDetail(getLoadBalancerInstanceDeta
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -912,21 +876,20 @@ func (a *V2ApiService) GetLoadBalancerInstanceDetail(getLoadBalancerInstanceDeta
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서인스턴스리스트조회
- @param getLoadBalancerInstanceListRequest getLoadBalancerInstanceListRequest
- @return *GetLoadBalancerInstanceListResponse*/
+/* V2ApiService
+로드밸런서인스턴스리스트조회
+@param getLoadBalancerInstanceListRequest getLoadBalancerInstanceListRequest
+@return *GetLoadBalancerInstanceListResponse*/
 func (a *V2ApiService) GetLoadBalancerInstanceList(getLoadBalancerInstanceListRequest *GetLoadBalancerInstanceListRequest) (*GetLoadBalancerInstanceListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetLoadBalancerInstanceListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetLoadBalancerInstanceListResponse
 	)
 
 	// create path and map variables
@@ -936,9 +899,8 @@ func (a *V2ApiService) GetLoadBalancerInstanceList(getLoadBalancerInstanceListRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -947,8 +909,7 @@ func (a *V2ApiService) GetLoadBalancerInstanceList(getLoadBalancerInstanceListRe
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -986,21 +947,20 @@ func (a *V2ApiService) GetLoadBalancerInstanceList(getLoadBalancerInstanceListRe
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서리스너리스트조회
- @param getLoadBalancerListenerListRequest getLoadBalancerListenerListRequest
- @return *GetLoadBalancerListenerListResponse*/
+/* V2ApiService
+로드밸런서리스너리스트조회
+@param getLoadBalancerListenerListRequest getLoadBalancerListenerListRequest
+@return *GetLoadBalancerListenerListResponse*/
 func (a *V2ApiService) GetLoadBalancerListenerList(getLoadBalancerListenerListRequest *GetLoadBalancerListenerListRequest) (*GetLoadBalancerListenerListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetLoadBalancerListenerListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetLoadBalancerListenerListResponse
 	)
 
 	// create path and map variables
@@ -1010,9 +970,8 @@ func (a *V2ApiService) GetLoadBalancerListenerList(getLoadBalancerListenerListRe
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1021,8 +980,7 @@ func (a *V2ApiService) GetLoadBalancerListenerList(getLoadBalancerListenerListRe
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1060,21 +1018,20 @@ func (a *V2ApiService) GetLoadBalancerListenerList(getLoadBalancerListenerListRe
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서룰리스트조회
- @param getLoadBalancerRuleListRequest getLoadBalancerRuleListRequest
- @return *GetLoadBalancerRuleListResponse*/
+/* V2ApiService
+로드밸런서룰리스트조회
+@param getLoadBalancerRuleListRequest getLoadBalancerRuleListRequest
+@return *GetLoadBalancerRuleListResponse*/
 func (a *V2ApiService) GetLoadBalancerRuleList(getLoadBalancerRuleListRequest *GetLoadBalancerRuleListRequest) (*GetLoadBalancerRuleListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetLoadBalancerRuleListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetLoadBalancerRuleListResponse
 	)
 
 	// create path and map variables
@@ -1084,9 +1041,8 @@ func (a *V2ApiService) GetLoadBalancerRuleList(getLoadBalancerRuleListRequest *G
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1095,8 +1051,7 @@ func (a *V2ApiService) GetLoadBalancerRuleList(getLoadBalancerRuleListRequest *G
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1134,21 +1089,20 @@ func (a *V2ApiService) GetLoadBalancerRuleList(getLoadBalancerRuleListRequest *G
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟그룹상세조회
- @param getTargetGroupDetailRequest getTargetGroupDetailRequest
- @return *GetTargetGroupDetailResponse*/
+/* V2ApiService
+타겟그룹상세조회
+@param getTargetGroupDetailRequest getTargetGroupDetailRequest
+@return *GetTargetGroupDetailResponse*/
 func (a *V2ApiService) GetTargetGroupDetail(getTargetGroupDetailRequest *GetTargetGroupDetailRequest) (*GetTargetGroupDetailResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetTargetGroupDetailResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetTargetGroupDetailResponse
 	)
 
 	// create path and map variables
@@ -1158,9 +1112,8 @@ func (a *V2ApiService) GetTargetGroupDetail(getTargetGroupDetailRequest *GetTarg
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1169,8 +1122,7 @@ func (a *V2ApiService) GetTargetGroupDetail(getTargetGroupDetailRequest *GetTarg
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1208,21 +1160,20 @@ func (a *V2ApiService) GetTargetGroupDetail(getTargetGroupDetailRequest *GetTarg
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟그룹리스트조회
- @param getTargetGroupListRequest getTargetGroupListRequest
- @return *GetTargetGroupListResponse*/
+/* V2ApiService
+타겟그룹리스트조회
+@param getTargetGroupListRequest getTargetGroupListRequest
+@return *GetTargetGroupListResponse*/
 func (a *V2ApiService) GetTargetGroupList(getTargetGroupListRequest *GetTargetGroupListRequest) (*GetTargetGroupListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetTargetGroupListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetTargetGroupListResponse
 	)
 
 	// create path and map variables
@@ -1232,9 +1183,8 @@ func (a *V2ApiService) GetTargetGroupList(getTargetGroupListRequest *GetTargetGr
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1243,8 +1193,7 @@ func (a *V2ApiService) GetTargetGroupList(getTargetGroupListRequest *GetTargetGr
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1282,21 +1231,20 @@ func (a *V2ApiService) GetTargetGroupList(getTargetGroupListRequest *GetTargetGr
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟리스트조회
- @param getTargetListRequest getTargetListRequest
- @return *GetTargetListResponse*/
+/* V2ApiService
+타겟리스트조회
+@param getTargetListRequest getTargetListRequest
+@return *GetTargetListResponse*/
 func (a *V2ApiService) GetTargetList(getTargetListRequest *GetTargetListRequest) (*GetTargetListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetTargetListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetTargetListResponse
 	)
 
 	// create path and map variables
@@ -1306,9 +1254,8 @@ func (a *V2ApiService) GetTargetList(getTargetListRequest *GetTargetListRequest)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1317,8 +1264,7 @@ func (a *V2ApiService) GetTargetList(getTargetListRequest *GetTargetListRequest)
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1356,21 +1302,20 @@ func (a *V2ApiService) GetTargetList(getTargetListRequest *GetTargetListRequest)
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟제거
- @param removeTargetRequest removeTargetRequest
- @return *RemoveTargetResponse*/
+/* V2ApiService
+타겟제거
+@param removeTargetRequest removeTargetRequest
+@return *RemoveTargetResponse*/
 func (a *V2ApiService) RemoveTarget(removeTargetRequest *RemoveTargetRequest) (*RemoveTargetResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  RemoveTargetResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     RemoveTargetResponse
 	)
 
 	// create path and map variables
@@ -1380,9 +1325,8 @@ func (a *V2ApiService) RemoveTarget(removeTargetRequest *RemoveTargetRequest) (*
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1391,8 +1335,7 @@ func (a *V2ApiService) RemoveTarget(removeTargetRequest *RemoveTargetRequest) (*
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1430,21 +1373,20 @@ func (a *V2ApiService) RemoveTarget(removeTargetRequest *RemoveTargetRequest) (*
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서설명설정
- @param setLoadBalancerDescriptionRequest setLoadBalancerDescriptionRequest
- @return *SetLoadBalancerDescriptionResponse*/
+/* V2ApiService
+로드밸런서설명설정
+@param setLoadBalancerDescriptionRequest setLoadBalancerDescriptionRequest
+@return *SetLoadBalancerDescriptionResponse*/
 func (a *V2ApiService) SetLoadBalancerDescription(setLoadBalancerDescriptionRequest *SetLoadBalancerDescriptionRequest) (*SetLoadBalancerDescriptionResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  SetLoadBalancerDescriptionResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     SetLoadBalancerDescriptionResponse
 	)
 
 	// create path and map variables
@@ -1454,9 +1396,8 @@ func (a *V2ApiService) SetLoadBalancerDescription(setLoadBalancerDescriptionRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1465,8 +1406,7 @@ func (a *V2ApiService) SetLoadBalancerDescription(setLoadBalancerDescriptionRequ
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1504,21 +1444,20 @@ func (a *V2ApiService) SetLoadBalancerDescription(setLoadBalancerDescriptionRequ
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 로드밸런서인스턴스서브넷설정
- @param setLoadBalancerInstanceSubnetRequest setLoadBalancerInstanceSubnetRequest
- @return *SetLoadBalancerInstanceSubnetResponse*/
+/* V2ApiService
+로드밸런서인스턴스서브넷설정
+@param setLoadBalancerInstanceSubnetRequest setLoadBalancerInstanceSubnetRequest
+@return *SetLoadBalancerInstanceSubnetResponse*/
 func (a *V2ApiService) SetLoadBalancerInstanceSubnet(setLoadBalancerInstanceSubnetRequest *SetLoadBalancerInstanceSubnetRequest) (*SetLoadBalancerInstanceSubnetResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  SetLoadBalancerInstanceSubnetResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     SetLoadBalancerInstanceSubnetResponse
 	)
 
 	// create path and map variables
@@ -1528,9 +1467,8 @@ func (a *V2ApiService) SetLoadBalancerInstanceSubnet(setLoadBalancerInstanceSubn
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1539,8 +1477,7 @@ func (a *V2ApiService) SetLoadBalancerInstanceSubnet(setLoadBalancerInstanceSubn
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1578,21 +1515,20 @@ func (a *V2ApiService) SetLoadBalancerInstanceSubnet(setLoadBalancerInstanceSubn
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟설정
- @param setTargetRequest setTargetRequest
- @return *SetTargetResponse*/
+/* V2ApiService
+타겟설정
+@param setTargetRequest setTargetRequest
+@return *SetTargetResponse*/
 func (a *V2ApiService) SetTarget(setTargetRequest *SetTargetRequest) (*SetTargetResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  SetTargetResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     SetTargetResponse
 	)
 
 	// create path and map variables
@@ -1602,9 +1538,8 @@ func (a *V2ApiService) SetTarget(setTargetRequest *SetTargetRequest) (*SetTarget
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1613,8 +1548,7 @@ func (a *V2ApiService) SetTarget(setTargetRequest *SetTargetRequest) (*SetTarget
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1652,21 +1586,20 @@ func (a *V2ApiService) SetTarget(setTargetRequest *SetTargetRequest) (*SetTarget
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- 타겟그룹설명설정
- @param setTargetGroupDescriptionRequest setTargetGroupDescriptionRequest
- @return *SetTargetGroupDescriptionResponse*/
+/* V2ApiService
+타겟그룹설명설정
+@param setTargetGroupDescriptionRequest setTargetGroupDescriptionRequest
+@return *SetTargetGroupDescriptionResponse*/
 func (a *V2ApiService) SetTargetGroupDescription(setTargetGroupDescriptionRequest *SetTargetGroupDescriptionRequest) (*SetTargetGroupDescriptionResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  SetTargetGroupDescriptionResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     SetTargetGroupDescriptionResponse
 	)
 
 	// create path and map variables
@@ -1676,9 +1609,8 @@ func (a *V2ApiService) SetTargetGroupDescription(setTargetGroupDescriptionReques
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -1687,8 +1619,7 @@ func (a *V2ApiService) SetTargetGroupDescription(setTargetGroupDescriptionReques
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -1726,7 +1657,5 @@ func (a *V2ApiService) SetTargetGroupDescription(setTargetGroupDescriptionReques
 		}
 	}
 
-
 	return &successPayload, err
 }
-

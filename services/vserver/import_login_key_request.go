@@ -11,8 +11,8 @@ package vserver
 type ImportLoginKeyRequest struct {
 
 	// 키이름
-KeyName *string `json:"keyName,omitempty"`
+	KeyName *string `json:"keyName,omitempty"`
 
 	// 공개키
-PublicKey *string `json:"publicKey"`
+	PublicKey *string `json:"publicKey"`
 }

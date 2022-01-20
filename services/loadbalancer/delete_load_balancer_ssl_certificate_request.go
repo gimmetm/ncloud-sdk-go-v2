@@ -11,5 +11,5 @@ package loadbalancer
 type DeleteLoadBalancerSslCertificateRequest struct {
 
 	// 인증서명
-CertificateName *string `json:"certificateName"`
+	CertificateName *string `json:"certificateName"`
 }

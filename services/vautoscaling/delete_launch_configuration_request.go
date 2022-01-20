@@ -11,8 +11,8 @@ package vautoscaling
 type DeleteLaunchConfigurationRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 론치설정번호
-LaunchConfigurationNo *string `json:"launchConfigurationNo"`
+	LaunchConfigurationNo *string `json:"launchConfigurationNo"`
 }

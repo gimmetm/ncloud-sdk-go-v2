@@ -11,35 +11,35 @@ package vautoscaling
 type LaunchConfiguration struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 론치설정번호
-LaunchConfigurationNo *string `json:"launchConfigurationNo,omitempty"`
+	LaunchConfigurationNo *string `json:"launchConfigurationNo,omitempty"`
 
 	// 론치설정이름
-LaunchConfigurationName *string `json:"launchConfigurationName,omitempty"`
+	LaunchConfigurationName *string `json:"launchConfigurationName,omitempty"`
 
 	// 서버이미지상품코드
-ServerImageProductCode *string `json:"serverImageProductCode,omitempty"`
+	ServerImageProductCode *string `json:"serverImageProductCode,omitempty"`
 
 	// 회원서버이미지인스턴스번호
-MemberServerImageInstanceNo *string `json:"memberServerImageInstanceNo,omitempty"`
+	MemberServerImageInstanceNo *string `json:"memberServerImageInstanceNo,omitempty"`
 
 	// 서버상품코드
-ServerProductCode *string `json:"serverProductCode,omitempty"`
+	ServerProductCode *string `json:"serverProductCode,omitempty"`
 
 	// 로그인키이름
-LoginKeyName *string `json:"loginKeyName,omitempty"`
+	LoginKeyName *string `json:"loginKeyName,omitempty"`
 
 	// 생성일시
-CreateDate *string `json:"createDate,omitempty"`
+	CreateDate *string `json:"createDate,omitempty"`
 
 	// 론치설정상태
-LaunchConfigurationStatus *CommonCode `json:"launchConfigurationStatus,omitempty"`
+	LaunchConfigurationStatus *CommonCode `json:"launchConfigurationStatus,omitempty"`
 
 	// 초기화스크립트번호
-InitScriptNo *string `json:"initScriptNo,omitempty"`
+	InitScriptNo *string `json:"initScriptNo,omitempty"`
 
 	// 볼륨암호화여부
-IsEncryptedVolume *bool `json:"isEncryptedVolume,omitempty"`
+	IsEncryptedVolume *bool `json:"isEncryptedVolume,omitempty"`
 }

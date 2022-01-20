@@ -11,26 +11,26 @@ package vpc
 type RouteTable struct {
 
 	// 라우트테이블번호
-RouteTableNo *string `json:"routeTableNo,omitempty"`
+	RouteTableNo *string `json:"routeTableNo,omitempty"`
 
 	// 라우트테이블이름
-RouteTableName *string `json:"routeTableName,omitempty"`
+	RouteTableName *string `json:"routeTableName,omitempty"`
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 
 	// 지원하는서브넷유형
-SupportedSubnetType *CommonCode `json:"supportedSubnetType,omitempty"`
+	SupportedSubnetType *CommonCode `json:"supportedSubnetType,omitempty"`
 
 	// Default여부
-IsDefault *bool `json:"isDefault,omitempty"`
+	IsDefault *bool `json:"isDefault,omitempty"`
 
 	// 라우트테이블상태
-RouteTableStatus *CommonCode `json:"routeTableStatus,omitempty"`
+	RouteTableStatus *CommonCode `json:"routeTableStatus,omitempty"`
 
 	// 라우트테이블설명
-RouteTableDescription *string `json:"routeTableDescription,omitempty"`
+	RouteTableDescription *string `json:"routeTableDescription,omitempty"`
 }

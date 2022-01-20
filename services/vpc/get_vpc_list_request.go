@@ -11,14 +11,14 @@ package vpc
 type GetVpcListRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// VPC이름
-VpcName *string `json:"vpcName,omitempty"`
+	VpcName *string `json:"vpcName,omitempty"`
 
 	// VPC상태코드
-VpcStatusCode *string `json:"vpcStatusCode,omitempty"`
+	VpcStatusCode *string `json:"vpcStatusCode,omitempty"`
 
 	// VPC번호리스트
-VpcNoList []*string `json:"vpcNoList,omitempty"`
+	VpcNoList []*string `json:"vpcNoList,omitempty"`
 }

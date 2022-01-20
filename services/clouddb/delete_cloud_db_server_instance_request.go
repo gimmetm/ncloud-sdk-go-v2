@@ -11,5 +11,5 @@ package clouddb
 type DeleteCloudDbServerInstanceRequest struct {
 
 	// CloudDB서버인스턴스번호
-CloudDBServerInstanceNo *string `json:"cloudDBServerInstanceNo"`
+	CloudDBServerInstanceNo *string `json:"cloudDBServerInstanceNo"`
 }

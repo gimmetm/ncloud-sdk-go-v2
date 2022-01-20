@@ -11,5 +11,5 @@ package vserver
 type CreateLoginKeyRequest struct {
 
 	// 키이름
-KeyName *string `json:"keyName,omitempty"`
+	KeyName *string `json:"keyName,omitempty"`
 }

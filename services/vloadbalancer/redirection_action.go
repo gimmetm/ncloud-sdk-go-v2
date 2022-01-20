@@ -11,20 +11,20 @@ package vloadbalancer
 type RedirectionAction struct {
 
 	// 프로토콜
-Protocol *string `json:"protocol,omitempty"`
+	Protocol *string `json:"protocol,omitempty"`
 
 	// 포트
-Port *string `json:"port,omitempty"`
+	Port *string `json:"port,omitempty"`
 
 	// 호스트
-Host *string `json:"host,omitempty"`
+	Host *string `json:"host,omitempty"`
 
 	// 경로
-Path *string `json:"path,omitempty"`
+	Path *string `json:"path,omitempty"`
 
 	// 쿼리
-Query *string `json:"query,omitempty"`
+	Query *string `json:"query,omitempty"`
 
 	// 상태코드
-StatusCode *string `json:"statusCode,omitempty"`
+	StatusCode *string `json:"statusCode,omitempty"`
 }

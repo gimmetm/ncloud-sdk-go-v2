@@ -11,11 +11,11 @@ package vloadbalancer
 type Target struct {
 
 	// 타겟번호
-TargetNo *string `json:"targetNo,omitempty"`
+	TargetNo *string `json:"targetNo,omitempty"`
 
 	// 헬스체크상태
-HealthCheckStatus *CommonCode `json:"healthCheckStatus,omitempty"`
+	HealthCheckStatus *CommonCode `json:"healthCheckStatus,omitempty"`
 
 	// 헬스체크응답
-HealthCheckResponse *string `json:"healthCheckResponse,omitempty"`
+	HealthCheckResponse *string `json:"healthCheckResponse,omitempty"`
 }

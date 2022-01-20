@@ -11,11 +11,11 @@ package vloadbalancer
 type SetLoadBalancerDescriptionRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 로드밸런서설명
-LoadBalancerDescription *string `json:"loadBalancerDescription,omitempty"`
+	LoadBalancerDescription *string `json:"loadBalancerDescription,omitempty"`
 
 	// 로드밸런서인스턴스번호
-LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo"`
+	LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo"`
 }

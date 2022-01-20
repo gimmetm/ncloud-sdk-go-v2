@@ -9,13 +9,13 @@
 package monitoring
 
 import (
+	"bytes"
 	"encoding/base64"
 	"encoding/json"
 	"io/ioutil"
 	"net/url"
 	"reflect"
 	"strings"
-	"bytes"
 
 	"golang.org/x/net/context"
 )
@@ -27,18 +27,17 @@ var (
 
 type V2ApiService service
 
-
-/* V2ApiService 
- B.메트릭 리스트 조회
- @param getListMetricsRequest getListMetricsRequest
- @return *GetListMetricsResponse*/
+/* V2ApiService
+B.메트릭 리스트 조회
+@param getListMetricsRequest getListMetricsRequest
+@return *GetListMetricsResponse*/
 func (a *V2ApiService) GetListMetrics(getListMetricsRequest *GetListMetricsRequest) (*GetListMetricsResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetListMetricsResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetListMetricsResponse
 	)
 
 	// create path and map variables
@@ -48,9 +47,8 @@ func (a *V2ApiService) GetListMetrics(getListMetricsRequest *GetListMetricsReque
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -59,8 +57,7 @@ func (a *V2ApiService) GetListMetrics(getListMetricsRequest *GetListMetricsReque
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -98,21 +95,20 @@ func (a *V2ApiService) GetListMetrics(getListMetricsRequest *GetListMetricsReque
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- A.메트릭 통계 조회
- @param getMetricStatisticListRequest getMetricStatisticListRequest
- @return *GetMetricStatisticListResponse*/
+/* V2ApiService
+A.메트릭 통계 조회
+@param getMetricStatisticListRequest getMetricStatisticListRequest
+@return *GetMetricStatisticListResponse*/
 func (a *V2ApiService) GetMetricStatisticList(getMetricStatisticListRequest *GetMetricStatisticListRequest) (*GetMetricStatisticListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetMetricStatisticListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetMetricStatisticListResponse
 	)
 
 	// create path and map variables
@@ -122,9 +118,8 @@ func (a *V2ApiService) GetMetricStatisticList(getMetricStatisticListRequest *Get
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -133,8 +128,7 @@ func (a *V2ApiService) GetMetricStatisticList(getMetricStatisticListRequest *Get
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -172,7 +166,5 @@ func (a *V2ApiService) GetMetricStatisticList(getMetricStatisticListRequest *Get
 		}
 	}
 
-
 	return &successPayload, err
 }
-

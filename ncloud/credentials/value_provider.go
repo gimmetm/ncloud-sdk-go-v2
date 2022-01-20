@@ -15,8 +15,8 @@ func NewValueProviderCreds(accessKey, secretKey string) *Credentials {
 func NewValueProvider(accessKey, secretKey string) *ValueProvider {
 	return &ValueProvider{
 		value: Value{
-			AccessKey:  accessKey,
-			SecretKey:  secretKey,
+			AccessKey: accessKey,
+			SecretKey: secretKey,
 		},
 	}
 }

@@ -11,20 +11,20 @@ package server
 type RecreateServerInstanceRequest struct {
 
 	// 서버인스턴스번호
-ServerInstanceNo *string `json:"serverInstanceNo,omitempty"`
+	ServerInstanceNo *string `json:"serverInstanceNo,omitempty"`
 
 	// 서버인스턴스이름
-ServerInstanceName *string `json:"serverInstanceName,omitempty"`
+	ServerInstanceName *string `json:"serverInstanceName,omitempty"`
 
 	// 서버이미지상품코드
-ServerImageProductCode *string `json:"serverImageProductCode,omitempty"`
+	ServerImageProductCode *string `json:"serverImageProductCode,omitempty"`
 
 	// 사용자데이터
-UserData *string `json:"userData,omitempty"`
+	UserData *string `json:"userData,omitempty"`
 
 	// 인스턴스태그리스트
-InstanceTagList []*InstanceTagParameter `json:"instanceTagList,omitempty"`
+	InstanceTagList []*InstanceTagParameter `json:"instanceTagList,omitempty"`
 
 	// 백신설치여부
-IsVaccineInstall *bool `json:"isVaccineInstall,omitempty"`
+	IsVaccineInstall *bool `json:"isVaccineInstall,omitempty"`
 }

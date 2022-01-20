@@ -9,12 +9,11 @@
 package monitoring
 
 type GetMetricStatisticListResponse struct {
+	RequestId *string `json:"requestId,omitempty"`
 
-RequestId *string `json:"requestId,omitempty"`
+	ReturnCode *string `json:"returnCode,omitempty"`
 
-ReturnCode *string `json:"returnCode,omitempty"`
+	ReturnMessage *string `json:"returnMessage,omitempty"`
 
-ReturnMessage *string `json:"returnMessage,omitempty"`
-
-MetricStatisticList []*MetricStatistic `json:"metricStatisticList,omitempty"`
+	MetricStatisticList []*MetricStatistic `json:"metricStatisticList,omitempty"`
 }

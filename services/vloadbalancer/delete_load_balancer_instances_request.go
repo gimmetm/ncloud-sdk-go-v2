@@ -11,8 +11,8 @@ package vloadbalancer
 type DeleteLoadBalancerInstancesRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 로드밸런서인스턴스번호리스트
-LoadBalancerInstanceNoList []*string `json:"loadBalancerInstanceNoList"`
+	LoadBalancerInstanceNoList []*string `json:"loadBalancerInstanceNoList"`
 }

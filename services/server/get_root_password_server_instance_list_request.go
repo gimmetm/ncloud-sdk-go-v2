@@ -11,5 +11,5 @@ package server
 type GetRootPasswordServerInstanceListRequest struct {
 
 	// 인스턴스태그리스트
-RootPasswordServerInstanceList []*RootPasswordServerInstanceParameter `json:"rootPasswordServerInstanceList"`
+	RootPasswordServerInstanceList []*RootPasswordServerInstanceParameter `json:"rootPasswordServerInstanceList"`
 }

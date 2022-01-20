@@ -9,10 +9,9 @@
 package monitoring
 
 type DataPoint struct {
+	Timestamp *string `json:"timestamp,omitempty"`
 
-Timestamp *string `json:"timestamp,omitempty"`
+	Average *float64 `json:"average,omitempty"`
 
-Average *float64 `json:"average,omitempty"`
-
-Unit *string `json:"unit,omitempty"`
+	Unit *string `json:"unit,omitempty"`
 }

@@ -11,11 +11,11 @@ package vpc
 type SetVpcPeeringDescriptionRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// VPCPeering인스턴스번호
-VpcPeeringInstanceNo *string `json:"vpcPeeringInstanceNo"`
+	VpcPeeringInstanceNo *string `json:"vpcPeeringInstanceNo"`
 
 	// VPCPeering설명
-VpcPeeringDescription *string `json:"vpcPeeringDescription,omitempty"`
+	VpcPeeringDescription *string `json:"vpcPeeringDescription,omitempty"`
 }

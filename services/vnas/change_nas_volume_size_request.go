@@ -11,11 +11,11 @@ package vnas
 type ChangeNasVolumeSizeRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// NAS볼륨인스턴스번호
-NasVolumeInstanceNo *string `json:"nasVolumeInstanceNo"`
+	NasVolumeInstanceNo *string `json:"nasVolumeInstanceNo"`
 
 	// 볼륨사이즈
-VolumeSize *int32 `json:"volumeSize"`
+	VolumeSize *int32 `json:"volumeSize"`
 }

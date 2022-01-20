@@ -11,8 +11,8 @@ package vnas
 type DeleteNasVolumeInstancesRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// NAS볼륨인스턴스번호리스트
-NasVolumeInstanceNoList []*string `json:"nasVolumeInstanceNoList"`
+	NasVolumeInstanceNoList []*string `json:"nasVolumeInstanceNoList"`
 }

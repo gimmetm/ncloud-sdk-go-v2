@@ -11,8 +11,8 @@ package clouddb
 type GetObjectStorageBackupListRequest struct {
 
 	// 클라우드DB인스턴스번호
-CloudDBInstanceNo *string `json:"cloudDBInstanceNo"`
+	CloudDBInstanceNo *string `json:"cloudDBInstanceNo"`
 
 	// 폴더이름
-FolderName *string `json:"folderName,omitempty"`
+	FolderName *string `json:"folderName,omitempty"`
 }

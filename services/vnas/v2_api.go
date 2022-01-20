@@ -9,13 +9,13 @@
 package vnas
 
 import (
+	"bytes"
 	"encoding/base64"
 	"encoding/json"
 	"io/ioutil"
 	"net/url"
 	"reflect"
 	"strings"
-	"bytes"
 
 	"golang.org/x/net/context"
 )
@@ -27,18 +27,17 @@ var (
 
 type V2ApiService service
 
-
-/* V2ApiService 
- NAS볼륨접근제어추가
- @param addNasVolumeAccessControlRequest addNasVolumeAccessControlRequest
- @return *AddNasVolumeAccessControlResponse*/
+/* V2ApiService
+NAS볼륨접근제어추가
+@param addNasVolumeAccessControlRequest addNasVolumeAccessControlRequest
+@return *AddNasVolumeAccessControlResponse*/
 func (a *V2ApiService) AddNasVolumeAccessControl(addNasVolumeAccessControlRequest *AddNasVolumeAccessControlRequest) (*AddNasVolumeAccessControlResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  AddNasVolumeAccessControlResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     AddNasVolumeAccessControlResponse
 	)
 
 	// create path and map variables
@@ -48,9 +47,8 @@ func (a *V2ApiService) AddNasVolumeAccessControl(addNasVolumeAccessControlReques
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -59,8 +57,7 @@ func (a *V2ApiService) AddNasVolumeAccessControl(addNasVolumeAccessControlReques
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -98,21 +95,20 @@ func (a *V2ApiService) AddNasVolumeAccessControl(addNasVolumeAccessControlReques
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- NAS볼륨사이즈변경
- @param changeNasVolumeSizeRequest changeNasVolumeSizeRequest
- @return *ChangeNasVolumeSizeResponse*/
+/* V2ApiService
+NAS볼륨사이즈변경
+@param changeNasVolumeSizeRequest changeNasVolumeSizeRequest
+@return *ChangeNasVolumeSizeResponse*/
 func (a *V2ApiService) ChangeNasVolumeSize(changeNasVolumeSizeRequest *ChangeNasVolumeSizeRequest) (*ChangeNasVolumeSizeResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  ChangeNasVolumeSizeResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     ChangeNasVolumeSizeResponse
 	)
 
 	// create path and map variables
@@ -122,9 +118,8 @@ func (a *V2ApiService) ChangeNasVolumeSize(changeNasVolumeSizeRequest *ChangeNas
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -133,8 +128,7 @@ func (a *V2ApiService) ChangeNasVolumeSize(changeNasVolumeSizeRequest *ChangeNas
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -172,21 +166,20 @@ func (a *V2ApiService) ChangeNasVolumeSize(changeNasVolumeSizeRequest *ChangeNas
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- NAS볼륨인스턴스생성
- @param createNasVolumeInstanceRequest createNasVolumeInstanceRequest
- @return *CreateNasVolumeInstanceResponse*/
+/* V2ApiService
+NAS볼륨인스턴스생성
+@param createNasVolumeInstanceRequest createNasVolumeInstanceRequest
+@return *CreateNasVolumeInstanceResponse*/
 func (a *V2ApiService) CreateNasVolumeInstance(createNasVolumeInstanceRequest *CreateNasVolumeInstanceRequest) (*CreateNasVolumeInstanceResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  CreateNasVolumeInstanceResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     CreateNasVolumeInstanceResponse
 	)
 
 	// create path and map variables
@@ -196,9 +189,8 @@ func (a *V2ApiService) CreateNasVolumeInstance(createNasVolumeInstanceRequest *C
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -207,8 +199,7 @@ func (a *V2ApiService) CreateNasVolumeInstance(createNasVolumeInstanceRequest *C
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -246,21 +237,20 @@ func (a *V2ApiService) CreateNasVolumeInstance(createNasVolumeInstanceRequest *C
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- NAS볼륨인스턴스제거
- @param deleteNasVolumeInstancesRequest deleteNasVolumeInstancesRequest
- @return *DeleteNasVolumeInstancesResponse*/
+/* V2ApiService
+NAS볼륨인스턴스제거
+@param deleteNasVolumeInstancesRequest deleteNasVolumeInstancesRequest
+@return *DeleteNasVolumeInstancesResponse*/
 func (a *V2ApiService) DeleteNasVolumeInstances(deleteNasVolumeInstancesRequest *DeleteNasVolumeInstancesRequest) (*DeleteNasVolumeInstancesResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  DeleteNasVolumeInstancesResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     DeleteNasVolumeInstancesResponse
 	)
 
 	// create path and map variables
@@ -270,9 +260,8 @@ func (a *V2ApiService) DeleteNasVolumeInstances(deleteNasVolumeInstancesRequest 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -281,8 +270,7 @@ func (a *V2ApiService) DeleteNasVolumeInstances(deleteNasVolumeInstancesRequest 
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -320,21 +308,20 @@ func (a *V2ApiService) DeleteNasVolumeInstances(deleteNasVolumeInstancesRequest 
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- NAS볼륨인스턴스상세조회
- @param getNasVolumeInstanceDetailRequest getNasVolumeInstanceDetailRequest
- @return *GetNasVolumeInstanceDetailResponse*/
+/* V2ApiService
+NAS볼륨인스턴스상세조회
+@param getNasVolumeInstanceDetailRequest getNasVolumeInstanceDetailRequest
+@return *GetNasVolumeInstanceDetailResponse*/
 func (a *V2ApiService) GetNasVolumeInstanceDetail(getNasVolumeInstanceDetailRequest *GetNasVolumeInstanceDetailRequest) (*GetNasVolumeInstanceDetailResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetNasVolumeInstanceDetailResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetNasVolumeInstanceDetailResponse
 	)
 
 	// create path and map variables
@@ -344,9 +331,8 @@ func (a *V2ApiService) GetNasVolumeInstanceDetail(getNasVolumeInstanceDetailRequ
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -355,8 +341,7 @@ func (a *V2ApiService) GetNasVolumeInstanceDetail(getNasVolumeInstanceDetailRequ
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -394,21 +379,20 @@ func (a *V2ApiService) GetNasVolumeInstanceDetail(getNasVolumeInstanceDetailRequ
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- NAS볼륨인스턴스리스트조회
- @param getNasVolumeInstanceListRequest getNasVolumeInstanceListRequest
- @return *GetNasVolumeInstanceListResponse*/
+/* V2ApiService
+NAS볼륨인스턴스리스트조회
+@param getNasVolumeInstanceListRequest getNasVolumeInstanceListRequest
+@return *GetNasVolumeInstanceListResponse*/
 func (a *V2ApiService) GetNasVolumeInstanceList(getNasVolumeInstanceListRequest *GetNasVolumeInstanceListRequest) (*GetNasVolumeInstanceListResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  GetNasVolumeInstanceListResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     GetNasVolumeInstanceListResponse
 	)
 
 	// create path and map variables
@@ -418,9 +402,8 @@ func (a *V2ApiService) GetNasVolumeInstanceList(getNasVolumeInstanceListRequest 
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -429,8 +412,7 @@ func (a *V2ApiService) GetNasVolumeInstanceList(getNasVolumeInstanceListRequest 
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -468,21 +450,20 @@ func (a *V2ApiService) GetNasVolumeInstanceList(getNasVolumeInstanceListRequest 
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- NAS볼륨접근제어삭제
- @param removeNasVolumeAccessControlRequest removeNasVolumeAccessControlRequest
- @return *RemoveNasVolumeAccessControlResponse*/
+/* V2ApiService
+NAS볼륨접근제어삭제
+@param removeNasVolumeAccessControlRequest removeNasVolumeAccessControlRequest
+@return *RemoveNasVolumeAccessControlResponse*/
 func (a *V2ApiService) RemoveNasVolumeAccessControl(removeNasVolumeAccessControlRequest *RemoveNasVolumeAccessControlRequest) (*RemoveNasVolumeAccessControlResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  RemoveNasVolumeAccessControlResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     RemoveNasVolumeAccessControlResponse
 	)
 
 	// create path and map variables
@@ -492,9 +473,8 @@ func (a *V2ApiService) RemoveNasVolumeAccessControl(removeNasVolumeAccessControl
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -503,8 +483,7 @@ func (a *V2ApiService) RemoveNasVolumeAccessControl(removeNasVolumeAccessControl
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -542,21 +521,20 @@ func (a *V2ApiService) RemoveNasVolumeAccessControl(removeNasVolumeAccessControl
 		}
 	}
 
-
 	return &successPayload, err
 }
 
-/* V2ApiService 
- NAS볼륨접근제어설정
- @param setNasVolumeAccessControlRequest setNasVolumeAccessControlRequest
- @return *SetNasVolumeAccessControlResponse*/
+/* V2ApiService
+NAS볼륨접근제어설정
+@param setNasVolumeAccessControlRequest setNasVolumeAccessControlRequest
+@return *SetNasVolumeAccessControlResponse*/
 func (a *V2ApiService) SetNasVolumeAccessControl(setNasVolumeAccessControlRequest *SetNasVolumeAccessControlRequest) (*SetNasVolumeAccessControlResponse, error) {
 	var (
 		localVarHttpMethod = strings.ToUpper("Post")
-		localVarPostBody interface{}
-		localVarFileName string
-		localVarFileBytes []byte
-	 	successPayload  SetNasVolumeAccessControlResponse
+		localVarPostBody   interface{}
+		localVarFileName   string
+		localVarFileBytes  []byte
+		successPayload     SetNasVolumeAccessControlResponse
 	)
 
 	// create path and map variables
@@ -566,9 +544,8 @@ func (a *V2ApiService) SetNasVolumeAccessControl(setNasVolumeAccessControlReques
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-
 	// to determine the Content-Type header
-	localVarHttpContentTypes := []string{ "application/x-www-form-urlencoded",  }
+	localVarHttpContentTypes := []string{"application/x-www-form-urlencoded"}
 
 	// set Content-Type header
 	localVarHttpContentType := selectHeaderContentType(localVarHttpContentTypes)
@@ -577,8 +554,7 @@ func (a *V2ApiService) SetNasVolumeAccessControl(setNasVolumeAccessControlReques
 	}
 
 	// to determine the Accept header
-	localVarHttpHeaderAccepts := []string{
-		}
+	localVarHttpHeaderAccepts := []string{}
 
 	// set Accept header
 	localVarHttpHeaderAccept := selectHeaderAccept(localVarHttpHeaderAccepts)
@@ -616,7 +592,5 @@ func (a *V2ApiService) SetNasVolumeAccessControl(setNasVolumeAccessControlReques
 		}
 	}
 
-
 	return &successPayload, err
 }
-

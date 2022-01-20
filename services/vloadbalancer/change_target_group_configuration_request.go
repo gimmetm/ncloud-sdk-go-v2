@@ -11,17 +11,17 @@ package vloadbalancer
 type ChangeTargetGroupConfigurationRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 알고리즘유형코드
-AlgorithmTypeCode *string `json:"algorithmTypeCode,omitempty"`
+	AlgorithmTypeCode *string `json:"algorithmTypeCode,omitempty"`
 
 	// 프록시프로토콜사용여부
-UseProxyProtocol *bool `json:"useProxyProtocol,omitempty"`
+	UseProxyProtocol *bool `json:"useProxyProtocol,omitempty"`
 
 	// 세션별접근사용여부
-UseStickySession *bool `json:"useStickySession,omitempty"`
+	UseStickySession *bool `json:"useStickySession,omitempty"`
 
 	// 타겟그룹번호
-TargetGroupNo *string `json:"targetGroupNo"`
+	TargetGroupNo *string `json:"targetGroupNo"`
 }

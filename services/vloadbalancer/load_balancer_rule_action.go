@@ -11,11 +11,11 @@ package vloadbalancer
 type LoadBalancerRuleAction struct {
 
 	// 룰액션유형
-RuleActionType *CommonCode `json:"ruleActionType,omitempty"`
+	RuleActionType *CommonCode `json:"ruleActionType,omitempty"`
 
 	// 타겟그룹액션
-TargetGroupAction *TargetGroupAction `json:"targetGroupAction,omitempty"`
+	TargetGroupAction *TargetGroupAction `json:"targetGroupAction,omitempty"`
 
 	// 리다이렉션액션
-RedirectionAction *RedirectionAction `json:"redirectionAction,omitempty"`
+	RedirectionAction *RedirectionAction `json:"redirectionAction,omitempty"`
 }

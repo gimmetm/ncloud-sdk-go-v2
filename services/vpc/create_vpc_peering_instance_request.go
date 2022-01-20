@@ -11,23 +11,23 @@ package vpc
 type CreateVpcPeeringInstanceRequest struct {
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// VPCPeering설명
-VpcPeeringDescription *string `json:"vpcPeeringDescription,omitempty"`
+	VpcPeeringDescription *string `json:"vpcPeeringDescription,omitempty"`
 
 	// 요청VPC번호
-SourceVpcNo *string `json:"sourceVpcNo"`
+	SourceVpcNo *string `json:"sourceVpcNo"`
 
 	// 수락VPC소유자ID
-TargetVpcLoginId *string `json:"targetVpcLoginId,omitempty"`
+	TargetVpcLoginId *string `json:"targetVpcLoginId,omitempty"`
 
 	// 수락VPC이름
-TargetVpcName *string `json:"targetVpcName,omitempty"`
+	TargetVpcName *string `json:"targetVpcName,omitempty"`
 
 	// 수락VPC번호
-TargetVpcNo *string `json:"targetVpcNo"`
+	TargetVpcNo *string `json:"targetVpcNo"`
 
 	// VPCPeering이름
-VpcPeeringName *string `json:"vpcPeeringName,omitempty"`
+	VpcPeeringName *string `json:"vpcPeeringName,omitempty"`
 }

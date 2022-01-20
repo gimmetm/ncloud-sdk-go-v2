@@ -11,20 +11,20 @@ package vpc
 type Vpc struct {
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 
 	// VPC이름
-VpcName *string `json:"vpcName,omitempty"`
+	VpcName *string `json:"vpcName,omitempty"`
 
 	// IPv4 CIDR블록
-Ipv4CidrBlock *string `json:"ipv4CidrBlock,omitempty"`
+	Ipv4CidrBlock *string `json:"ipv4CidrBlock,omitempty"`
 
 	// VPC상태
-VpcStatus *CommonCode `json:"vpcStatus,omitempty"`
+	VpcStatus *CommonCode `json:"vpcStatus,omitempty"`
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 생성일시
-CreateDate *string `json:"createDate,omitempty"`
+	CreateDate *string `json:"createDate,omitempty"`
 }

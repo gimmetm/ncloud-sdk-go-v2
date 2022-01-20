@@ -11,11 +11,11 @@ package clouddb
 type DmsFile struct {
 
 	// 파일길이
-FileLength *int64 `json:"fileLength,omitempty"`
+	FileLength *int64 `json:"fileLength,omitempty"`
 
 	// 최종작성시각
-LastWriteTime *string `json:"lastWriteTime,omitempty"`
+	LastWriteTime *string `json:"lastWriteTime,omitempty"`
 
 	// 파일이름
-FileName *string `json:"fileName,omitempty"`
+	FileName *string `json:"fileName,omitempty"`
 }

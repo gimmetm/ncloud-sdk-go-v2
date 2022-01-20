@@ -11,53 +11,53 @@ package vloadbalancer
 type LoadBalancerInstance struct {
 
 	// 로드밸런서인스턴스번호
-LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo,omitempty"`
+	LoadBalancerInstanceNo *string `json:"loadBalancerInstanceNo,omitempty"`
 
 	// 로드밸런서인스턴스상태
-LoadBalancerInstanceStatus *CommonCode `json:"loadBalancerInstanceStatus,omitempty"`
+	LoadBalancerInstanceStatus *CommonCode `json:"loadBalancerInstanceStatus,omitempty"`
 
 	// 로드밸런서인스턴스OP
-LoadBalancerInstanceOperation *CommonCode `json:"loadBalancerInstanceOperation,omitempty"`
+	LoadBalancerInstanceOperation *CommonCode `json:"loadBalancerInstanceOperation,omitempty"`
 
 	// 로드밸런서인스턴스상태이름
-LoadBalancerInstanceStatusName *string `json:"loadBalancerInstanceStatusName,omitempty"`
+	LoadBalancerInstanceStatusName *string `json:"loadBalancerInstanceStatusName,omitempty"`
 
 	// 로드밸런서설명
-LoadBalancerDescription *string `json:"loadBalancerDescription,omitempty"`
+	LoadBalancerDescription *string `json:"loadBalancerDescription,omitempty"`
 
 	// 생성일시
-CreateDate *string `json:"createDate,omitempty"`
+	CreateDate *string `json:"createDate,omitempty"`
 
 	// 로드밸런서이름
-LoadBalancerName *string `json:"loadBalancerName,omitempty"`
+	LoadBalancerName *string `json:"loadBalancerName,omitempty"`
 
 	// 로드밸런서도메인
-LoadBalancerDomain *string `json:"loadBalancerDomain,omitempty"`
+	LoadBalancerDomain *string `json:"loadBalancerDomain,omitempty"`
 
 	// 로드밸런서IP리스트
-LoadBalancerIpList []*string `json:"loadBalancerIpList,omitempty"`
+	LoadBalancerIpList []*string `json:"loadBalancerIpList,omitempty"`
 
 	// 로드밸런서유형
-LoadBalancerType *CommonCode `json:"loadBalancerType,omitempty"`
+	LoadBalancerType *CommonCode `json:"loadBalancerType,omitempty"`
 
 	// 로드밸런서네트워크유형
-LoadBalancerNetworkType *CommonCode `json:"loadBalancerNetworkType,omitempty"`
+	LoadBalancerNetworkType *CommonCode `json:"loadBalancerNetworkType,omitempty"`
 
 	// 부하처리성능유형
-ThroughputType *CommonCode `json:"throughputType,omitempty"`
+	ThroughputType *CommonCode `json:"throughputType,omitempty"`
 
 	// 연결타임아웃
-IdleTimeout *int32 `json:"idleTimeout,omitempty"`
+	IdleTimeout *int32 `json:"idleTimeout,omitempty"`
 
 	// VPC번호
-VpcNo *string `json:"vpcNo,omitempty"`
+	VpcNo *string `json:"vpcNo,omitempty"`
 
 	// REGION코드
-RegionCode *string `json:"regionCode,omitempty"`
+	RegionCode *string `json:"regionCode,omitempty"`
 
 	// 서브넷번호리스트
-SubnetNoList []*string `json:"subnetNoList,omitempty"`
+	SubnetNoList []*string `json:"subnetNoList,omitempty"`
 
 	// 로드밸런서리스너번호리스트
-LoadBalancerListenerNoList []*string `json:"loadBalancerListenerNoList,omitempty"`
+	LoadBalancerListenerNoList []*string `json:"loadBalancerListenerNoList,omitempty"`
 }

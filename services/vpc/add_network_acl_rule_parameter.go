@@ -11,20 +11,20 @@ package vpc
 type AddNetworkAclRuleParameter struct {
 
 	// 네트워크ACLRule설명
-NetworkAclRuleDescription *string `json:"networkAclRuleDescription,omitempty"`
+	NetworkAclRuleDescription *string `json:"networkAclRuleDescription,omitempty"`
 
 	// IP블록
-IpBlock *string `json:"ipBlock"`
+	IpBlock *string `json:"ipBlock"`
 
 	// Rule액션코드
-RuleActionCode *string `json:"ruleActionCode"`
+	RuleActionCode *string `json:"ruleActionCode"`
 
 	// 포트범위
-PortRange *string `json:"portRange,omitempty"`
+	PortRange *string `json:"portRange,omitempty"`
 
 	// 우선순위
-Priority *int32 `json:"priority"`
+	Priority *int32 `json:"priority"`
 
 	// 프로토콜유형코드
-ProtocolTypeCode *string `json:"protocolTypeCode"`
+	ProtocolTypeCode *string `json:"protocolTypeCode"`
 }
